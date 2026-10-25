@@ -36,6 +36,8 @@ va online da solo in pochi secondi.
 - Servizi (3 schede): Personal Training in studio (C CLUB, include EMS e analisi BIA), Coaching Online (app),
   Video Coaching "Servizio Pro" (circa 1 ora in videochiamata, Carlo segue l'allenamento in diretta).
   I link "Scopri di più"/"Prenota" preselezionano il servizio nel modulo (`data-servizio`).
+- Foto "Chi sono": `img/carlo-team.webp` (320 px, la foto di Carlo nella sezione Team del sito FitPoint).
+  Se Carlo manda una versione più grande, sostituirla.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
