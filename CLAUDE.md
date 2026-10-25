@@ -33,7 +33,8 @@ va online da solo in pochi secondi.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
 - Hero: niente foto di Carlo (è già in "Chi sono"); sfondo = video C CLUB `img/video-hero.mp4` (11 s, muto, in loop,
-  dal TikTok di Carlo; immagine ferma `video-hero.webp` se movimento ridotto o risparmio dati), a tutto schermo da telefono; da computer occupa
+  dal TikTok di Carlo; immagine ferma `video-hero.webp` se movimento ridotto o risparmio dati), dietro al testo da telefono (altezza del contenuto, non tutto schermo:
+  Carlo trovava troppo spazio vuoto); da computer occupa
   la metà destra, sfumato verso il testo (verticale: a tutta larghezza diventerebbe sgranato).
   Tolta la fascia dei numeri (14 certificazioni ecc.): sono già più in basso. Da telefono VIP e negozi scorrono di lato.
   Quella foto (Carlo con i loghi) resta solo in `img/og-carlo.jpg` per l'anteprima social.
