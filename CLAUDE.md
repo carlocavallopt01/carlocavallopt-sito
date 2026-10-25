@@ -58,7 +58,7 @@ va online da solo in pochi secondi.
   campo trappola anti-spam `sito_web`. Repo app: `carlocavallopt01/lead`. ATTENZIONE: in Lead questi contatti contano come
   "Moduli del sito" per le chiamate di Vittoria, ma il consenso di questo sito NON cita l'assistente virtuale.
 - Privacy: `privacy.html` (servita come /privacy grazie a `cleanUrls` in `vercel.json`). Titolare indicato: FIT POINT ACTIVE
-  SSD a r.l. (P.IVA 03417200734), anche nel footer: da confermare con Carlo.
+  SSD a r.l. (P.IVA 03417200734), anche nel footer: confermato da Carlo, tutto è sotto la società.
 - Domande frequenti (`#faq`, prima dei contatti, + dati FAQPage per Google): palestra non serve per il Coaching Online,
   check di circa 30 minuti, si può iniziare da zero (risposte di Carlo); check gratuito e differenza Coaching/Video Coaching.
 - Speed Training Store: blocco `#store` dentro "I miei centri" (3 negozi Sava/Manduria/Francavilla con orari,
