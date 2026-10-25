@@ -50,7 +50,7 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .menu a:hover{color:var(--text)}
 .menu .btn{padding:12px 20px;font-size:15px;color:var(--on-accent)}
 .menu-toggle{display:none;background:none;border:1px solid var(--line-2);color:var(--text);border-radius:12px;width:46px;height:46px;cursor:pointer;align-items:center;justify-content:center}
-@media (max-width:900px){
+@media (max-width:1100px){
   .menu-toggle{display:flex}
   .menu{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 24px 24px;display:none}
   .menu.open{display:flex}
@@ -90,6 +90,21 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .centro p{margin:0;color:var(--soft);font-size:16px;line-height:1.6}
 .centro .orari{font-size:14px;color:var(--muted)}
 .centro .vai{margin-top:auto;padding-top:8px;font-weight:800;color:var(--c)}
+
+/* store */
+.store{margin-top:56px;padding:clamp(24px,4vw,48px);background:var(--surface);border:1px solid var(--line);border-top:6px solid #f5b400;border-radius:28px;display:flex;flex-direction:column;gap:28px}
+.store-testa{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center}
+.store-testa>div{flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.store-testa p{margin:0;color:var(--soft);font-size:17px;line-height:1.6}
+.store-logo{flex:1 1 240px;width:100%;max-width:320px;height:auto;mix-blend-mode:lighten}
+.store-titolo{font-size:clamp(26px,3.2vw,40px)}
+.negozi{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.negozio{background:var(--bg);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.negozio img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.negozio-corpo{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px}
+.negozio h3{margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-size:22px}
+.negozio a{color:var(--accent);font-weight:700;text-decoration:none;font-size:15px}
+.negozio p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
 
 /* stats */
 .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -195,6 +210,7 @@ footer a{color:var(--soft)}
     <nav id="menu" class="menu" aria-label="Menu principale">
       <a href="#servizi">Servizi</a>
       <a href="#centri">I miei centri</a>
+      <a href="#store">Store</a>
       <a href="#coaching">Coaching Online</a>
       <a href="#risultati">Risultati</a>
       <a href="#chi-sono">Chi sono</a>
@@ -320,6 +336,46 @@ footer a{color:var(--soft)}
           <span class="vai">Scopri Girl Power →</span>
         </span>
       </a>
+    </div>
+    <div class="store" id="store">
+      <div class="store-testa">
+        <img class="store-logo" src="/img/logo-speed-training-store.webp" alt="Speed Training Store – integratori, food, abbigliamento" width="700" height="233" loading="lazy">
+        <div>
+          <span class="eyebrow">I miei negozi</span>
+          <h3 class="display store-titolo">Integratori, food e abbigliamento per chi si allena</h3>
+          <p>Speed Training Store è il negozio di FIT POINT ACTIVE: prodotti scelti da chi l'allenamento lo vive ogni giorno. Ti consigliamo solo quello che serve davvero al tuo obiettivo. In negozio c'è anche la raccolta punti: con i tuoi acquisti ottieni premi.</p>
+        </div>
+      </div>
+      <div class="negozi">
+        <article class="negozio">
+          <img src="/img/negozio-sava.webp" alt="Il negozio Speed Training Store di Sava" width="900" height="675" loading="lazy">
+          <div class="negozio-corpo">
+            <h3>Sava</h3>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Corso+Italia+32+74028+Sava+TA" target="_blank" rel="noopener">Corso Italia 32 · Come arrivare →</a>
+            <p>Lun–Ven 9:30–13 / 17:30–21 · Sab 9:30–13 · Dom chiuso</p>
+          </div>
+        </article>
+        <article class="negozio">
+          <img src="/img/negozio-manduria.webp" alt="Il negozio Speed Training Store di Manduria" width="900" height="675" loading="lazy">
+          <div class="negozio-corpo">
+            <h3>Manduria</h3>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Via+Roma+45+74024+Manduria+TA" target="_blank" rel="noopener">Via Roma 45 · Come arrivare →</a>
+            <p>Lun, Mar, Mer, Ven 9–13 / 17–21 · Gio 9–13 · Sab 9–13 / 17–20:30 · Dom chiuso</p>
+          </div>
+        </article>
+        <article class="negozio">
+          <img src="/img/negozio-francavilla.webp" alt="Il negozio Speed Training Store di Francavilla Fontana" width="900" height="675" loading="lazy">
+          <div class="negozio-corpo">
+            <h3>Francavilla Fontana</h3>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Via+San+Francesco+47+72021+Francavilla+Fontana+BR" target="_blank" rel="noopener">Via San Francesco 47 · Come arrivare →</a>
+            <p>Lun–Ven 9:30–13 / 17:30–21 · Sab 9:30–13 · Dom chiuso</p>
+          </div>
+        </article>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-accent" href="https://speedtrainingstore.com" target="_blank" rel="noopener">Vai allo shop online</a>
+        <a class="btn btn-ghost" href="https://wa.me/393208526928" target="_blank" rel="noopener">Scrivi al negozio su WhatsApp</a>
+      </div>
     </div>
   </div>
 </section>
@@ -473,6 +529,7 @@ footer a{color:var(--soft)}
       <a href="https://www.facebook.com/pages/Carlo-Cavallo-Personal-Trainer/295948633941280" target="_blank" rel="noopener">Facebook</a>
       <a href="https://youtu.be/8lb5obnG-L4" target="_blank" rel="noopener">YouTube</a>
       <a href="https://www.facebook.com/fitpointactive/" target="_blank" rel="noopener">FITPOINT ACTIVE Sava</a>
+      <a href="https://speedtrainingstore.com" target="_blank" rel="noopener">Speed Training Store</a>
     </div>
   </div>
 </footer>

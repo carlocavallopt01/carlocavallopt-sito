@@ -17,7 +17,7 @@ va online da solo in pochi secondi.
 
 ## Contenuti
 - Design: sfondo scuro #0E0F0C, accento verde lime #C6F432 (variabili CSS in `:root`),
-  font Archivo (titoli) + Manrope (testo). Responsive, menu a scomparsa sotto 900px.
+  font Archivo (titoli) + Manrope (testo). Responsive, menu a scomparsa sotto 1100px.
 - Sezioni: hero, numeri, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
   risultati, chi sono (certificazioni e master), modulo contatti, footer.
 - WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). Il modulo apre
@@ -41,6 +41,8 @@ va online da solo in pochi secondi.
 - Foto "Chi sono": `img/carlo-chi-sono.webp` (verticale, sfondo bianco, mandata da Carlo), riquadro 4:5.
 - Sezione contatti = "Prenota il tuo check gratuito": in sede (C CLUB, Via Leonardo Da Vinci 95, con analisi BIA)
   o in videochiamata su Google Meet, più cosa si fa nel check. Le CTA dicono "check gratuito", non "consulenza".
+- Speed Training Store: blocco `#store` dentro "I miei centri" (3 negozi Sava/Manduria/Francavilla con orari,
+  shop online speedtrainingstore.com, WhatsApp negozio 393208526928). Dati e foto dal repo `sito-fitpointactive`.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
