@@ -49,6 +49,9 @@ va online da solo in pochi secondi.
 - Foto "Chi sono": `img/carlo-chi-sono.webp` (verticale, sfondo bianco, mandata da Carlo), riquadro 4:5.
 - Sezione contatti = "Prenota il tuo check gratuito": in sede (C CLUB, Via Leonardo Da Vinci 95, con analisi BIA)
   o in videochiamata su Google Meet, più cosa si fa nel check. Le CTA dicono "check gratuito", non "consulenza".
+- Modulo in 2 passi: passo 1 dati obbligatori (nome, telefono, email) e scelte; poi passo 2 facoltativo "Aiutami a
+  conoscerti" (dati fisici, salute, allenamento, stile di vita, motivazione). Un solo messaggio WhatsApp con le sole
+  risposte date (campi con `data-q`, raggruppati per `fieldset`). "Salta e invia solo i dati" manda solo il passo 1.
 - Speed Training Store: blocco `#store` dentro "I miei centri" (3 negozi Sava/Manduria/Francavilla con orari,
   shop online speedtrainingstore.com, WhatsApp negozio 393208526928). Dati e foto dal repo `sito-fitpointactive`.
 - Logo di Carlo (CC, "CARLO CAVALLO COACH"; originale oro, sul sito ricolorato verde lime #C6F432, COACH bianco): `img/logo-cc.webp` (solo simbolo, in alto a sinistra),

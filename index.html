@@ -187,8 +187,8 @@ dialog::backdrop{background:rgba(0,0,0,.8)}
 .cta-text p{margin:0;font-size:19px;line-height:1.55;color:#22241D}
 form{flex:1 1 360px;min-width:0;background:var(--bg);color:var(--text);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:16px}
 label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
-input,select{background:var(--surface);border:1px solid var(--line-2);border-radius:12px;padding:14px 16px;color:var(--text);font:inherit;font-weight:500;font-size:16px;min-height:48px}
-input:focus,select:focus{outline:2px solid var(--accent);outline-offset:1px}
+input,select,textarea{background:var(--surface);border:1px solid var(--line-2);border-radius:12px;padding:14px 16px;color:var(--text);font:inherit;font-weight:500;font-size:16px;min-height:48px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
 form button{background:var(--accent);color:var(--on-accent);border:0;border-radius:999px;padding:16px 24px;font:inherit;font-weight:800;font-size:17px;cursor:pointer;min-height:52px}
 .cta-sopra{display:block;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#3A3D33;margin-bottom:10px}
 .modi{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
@@ -198,6 +198,19 @@ form button{background:var(--accent);color:var(--on-accent);border:0;border-radi
 .check-lista{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .check-lista li{position:relative;padding-left:28px;font-size:16px;line-height:1.5;color:#22241D}
 .check-lista li::before{content:"";position:absolute;left:2px;top:4px;width:16px;height:16px;border-radius:999px;background:var(--on-accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C6F432' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/10px no-repeat}
+#lead-form{scroll-margin-top:100px}
+.passo1,.passo2{display:flex;flex-direction:column;gap:16px}
+.passo1[hidden],.passo2[hidden]{display:none}
+textarea{resize:vertical;min-height:72px;line-height:1.4}
+fieldset{border:0;border-top:1px solid var(--line-2);margin:0;padding:16px 0 0;display:flex;flex-direction:column;gap:14px;min-width:0}
+legend{padding:0 10px 0 0;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.riga{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.riga label{min-width:0}
+.riga select,.riga input{width:100%}
+.p2-sopra{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.p2-titolo{margin:6px 0 6px;font-family:'Archivo',sans-serif;font-weight:900;font-size:26px;text-transform:uppercase}
+.p2-azioni{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+form .link-btn{background:none;color:var(--soft);padding:8px 0;min-height:44px;font-size:15px;font-weight:700;text-decoration:underline;border-radius:0}
 .form-note{font-size:13px;color:var(--muted);margin:0}
 
 footer{border-top:1px solid var(--line)}
@@ -513,6 +526,7 @@ footer a{color:var(--soft)}
         </div>
       </div>
       <form id="lead-form" novalidate>
+        <div id="passo1" class="passo1">
         <label>Nome e cognome<input name="nome" type="text" autocomplete="name" placeholder="Mario Rossi" required></label>
         <label>Telefono<input name="telefono" type="tel" autocomplete="tel" placeholder="333 123 4567" required></label>
         <label>Email<input name="email" type="email" autocomplete="email" placeholder="mario.rossi@email.it" required></label>
@@ -532,7 +546,39 @@ footer a{color:var(--soft)}
           </select>
         </label>
         <button type="submit">Prenota il check gratuito</button>
-        <p class="form-note">Si aprirà WhatsApp con il messaggio già pronto da inviarmi.</p>
+        <p class="form-note">Poi qualche domanda facoltativa per conoscerti meglio, e si aprirà WhatsApp con il messaggio già pronto da inviarmi.</p>
+        </div>
+        <div id="passo2" class="passo2" hidden>
+          <div>
+            <span class="p2-sopra">Facoltativo · 2 minuti</span>
+            <h3 class="p2-titolo">Aiutami a conoscerti</h3>
+            <p class="form-note">Più so di te, più il check sarà utile. Rispondi solo a quello che vuoi.</p>
+          </div>
+          <fieldset><legend>Dati fisici</legend>
+            <div class="riga"><label>Sesso<select name="sesso" data-q="Sesso"><option value="">Scegli…</option><option>Donna</option><option>Uomo</option></select></label><label>Età<input name="eta" data-q="Età" data-unit="anni" type="number" inputmode="numeric" min="1" placeholder="35"></label></div>
+            <div class="riga"><label>Altezza<input name="altezza" data-q="Altezza" data-unit="cm" type="number" inputmode="numeric" min="1" placeholder="170"></label><label>Peso<input name="peso" data-q="Peso" data-unit="kg" type="number" inputmode="numeric" min="1" placeholder="70"></label></div>
+          </fieldset>
+          <fieldset><legend>Salute</legend>
+            <label>Infortuni o dolori<textarea name="infortuni" data-q="Infortuni o dolori" rows="2" placeholder="Es. mal di schiena, ginocchio operato…"></textarea></label>
+            <label>Patologie o farmaci da segnalare<textarea name="patologie" data-q="Patologie o farmaci da segnalare" rows="2" placeholder="Es. pressione alta, tiroide…"></textarea></label>
+          </fieldset>
+          <fieldset><legend>Allenamento</legend>
+            <label>Ti alleni già?<select name="alleni" data-q="Ti alleni già?"><option value="">Scegli…</option><option>No, mai fatto</option><option>Ho smesso da un po'</option><option>Sì, 1-2 volte a settimana</option><option>Sì, 3 o più volte a settimana</option></select></label>
+            <label>Dove ti alleneresti?<select name="doveall" data-q="Dove ti alleneresti?"><option value="">Scegli…</option><option>In palestra</option><option>A casa</option><option>Nei tuoi centri a Sava</option><option>Ancora non so</option></select></label>
+            <label>Quanti giorni a settimana puoi allenarti?<select name="giorni" data-q="Quanti giorni a settimana puoi allenarti?"><option value="">Scegli…</option><option>1-2</option><option>3</option><option>4</option><option>5 o più</option></select></label>
+          </fieldset>
+          <fieldset><legend>Stile di vita</legend>
+            <div class="riga"><label>Lavoro<select name="lavoro" data-q="Lavoro"><option value="">Scegli…</option><option>Seduto</option><option>In piedi</option><option>Fisico</option></select></label><label>Sonno<select name="sonno" data-q="Sonno"><option value="">Scegli…</option><option>Meno di 6 ore</option><option>6-7 ore</option><option>7-8 ore</option><option>Più di 8 ore</option></select></label></div>
+            <div class="riga"><label>Alimentazione<select name="alimentazione" data-q="Alimentazione"><option value="">Scegli…</option><option>Disordinata</option><option>Abbastanza curata</option><option>Molto curata</option></select></label><label>Stress<select name="stress" data-q="Stress"><option value="">Scegli…</option><option>Basso</option><option>Medio</option><option>Alto</option></select></label></div>
+          </fieldset>
+          <fieldset><legend>Motivazione</legend>
+            <label>Perché proprio adesso?<textarea name="perche" data-q="Perché proprio adesso?" rows="2" placeholder="Cosa ti ha spinto a scrivermi oggi?"></textarea></label>
+            <label>Hai già provato altri percorsi? Com'è andata?<textarea name="provato" data-q="Hai già provato altri percorsi? Com'è andata?" rows="2" placeholder="Es. diete, palestra da solo, app…"></textarea></label>
+            <label>Come mi hai conosciuto?<select name="conosciuto" data-q="Come mi hai conosciuto?"><option value="">Scegli…</option><option>Instagram</option><option>Facebook</option><option>Passaparola</option><option>Google</option><option>Nei miei centri</option><option>Altro</option></select></label>
+          </fieldset>
+          <button type="submit">Invia tutto su WhatsApp</button>
+          <div class="p2-azioni"><button type="button" class="link-btn" id="p2-indietro">← Indietro</button><button type="button" class="link-btn" id="p2-salta">Salta e invia solo i dati</button></div>
+        </div>
       </form>
     </div>
   </div>
@@ -590,12 +636,13 @@ if (WHATSAPP) {
   });
 }
 
-document.getElementById('lead-form').addEventListener('submit', function(e){
-  e.preventDefault();
-  var f = e.target;
-  var vuoto = [f.nome, f.telefono, f.email].filter(function(c){ return !c.value.trim(); })[0];
-  if (vuoto) { vuoto.focus(); return; }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) { f.email.focus(); return; }
+var form = document.getElementById('lead-form'), passo1 = document.getElementById('passo1'), passo2 = document.getElementById('passo2');
+function mostraPasso(n){
+  passo1.hidden = n !== 1; passo2.hidden = n !== 2;
+  form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function inviaRichiesta(conRisposte){
+  var f = form;
   var msg = 'Ciao Carlo, vorrei prenotare il check gratuito.\n' +
     'Dove: ' + f.dove.value + '\n' +
     'Nome: ' + f.nome.value.trim() + '\n' +
@@ -603,12 +650,36 @@ document.getElementById('lead-form').addEventListener('submit', function(e){
     'Email: ' + f.email.value.trim() + '\n' +
     'Obiettivo: ' + f.obiettivo.value + '\n' +
     'Mi interessa: ' + f.servizio.value;
+  if (conRisposte) {
+    var righe = [];
+    passo2.querySelectorAll('fieldset').forEach(function(fs){
+      var gruppo = [];
+      fs.querySelectorAll('[data-q]').forEach(function(c){
+        var v = c.value.trim();
+        var q = c.getAttribute('data-q');
+        if (v) gruppo.push(q + (/\?$/.test(q) ? ' ' : ': ') + v + (c.getAttribute('data-unit') ? ' ' + c.getAttribute('data-unit') : ''));
+      });
+      if (gruppo.length) righe.push('\n' + fs.querySelector('legend').textContent.toUpperCase() + '\n' + gruppo.join('\n'));
+    });
+    if (righe.length) msg += '\n' + righe.join('\n');
+  }
   if (WHATSAPP) {
     window.open(waLink(msg), '_blank');
   } else {
     window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Check gratuito - ' + f.nome.value.trim()) + '&body=' + encodeURIComponent(msg);
   }
+}
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = form;
+  if (!passo2.hidden) { inviaRichiesta(true); return; }
+  var vuoto = [f.nome, f.telefono, f.email].filter(function(c){ return !c.value.trim(); })[0];
+  if (vuoto) { vuoto.focus(); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) { f.email.focus(); return; }
+  mostraPasso(2);
 });
+document.getElementById('p2-indietro').addEventListener('click', function(){ mostraPasso(1); });
+document.getElementById('p2-salta').addEventListener('click', function(){ inviaRichiesta(false); });
 
 var toggle = document.querySelector('.menu-toggle'), menu = document.getElementById('menu');
 toggle.addEventListener('click', function(){
