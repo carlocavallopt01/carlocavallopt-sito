@@ -35,7 +35,7 @@ va online da solo in pochi secondi.
   del repo `sito-fitpointactive`. Non visibili nella pagina: si aprono in una finestra (`<dialog>`) dal pulsante
   "Vedi i risultati" e si caricano solo all'apertura. `vercel.json` le esclude da Google (X-Robots-Tag).
   Non ci sono recensioni scritte: aggiungerle solo se Carlo le fornisce, mai inventarle.
-- Servizi (3 schede): Personal Training in studio (C CLUB, include EMS e analisi BIA), Coaching Online (app),
+- Servizi (3 schede): Personal Training in studio (C CLUB, include EMS e analisi BIA), Coaching Online,
   Video Coaching "Servizio Pro" (circa 1 ora in videochiamata, Carlo segue l'allenamento in diretta).
   I link "Scopri di più"/"Prenota" preselezionano il servizio nel modulo (`data-servizio`).
 - Foto "Chi sono": `img/carlo-chi-sono.webp` (verticale, sfondo bianco, mandata da Carlo), riquadro 4:5.
@@ -47,7 +47,8 @@ va online da solo in pochi secondi.
   `img/logo-carlo-cavallo.webp` (completo, nel footer), `img/favicon.png`, `img/apple-touch-icon.png`.
   Ricavati dall'immagine inviata da Carlo togliendo lo sfondo nero (trasparenti).
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
-  (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
+  (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI.
+- L'app Speed Training Program non esiste più: non citarla sul sito.
 
 ## Da fare
 - Nulla in sospeso: le prossime modifiche le decide Carlo man mano.
