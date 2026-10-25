@@ -36,8 +36,7 @@ va online da solo in pochi secondi.
 - Servizi (3 schede): Personal Training in studio (C CLUB, include EMS e analisi BIA), Coaching Online (app),
   Video Coaching "Servizio Pro" (circa 1 ora in videochiamata, Carlo segue l'allenamento in diretta).
   I link "Scopri di più"/"Prenota" preselezionano il servizio nel modulo (`data-servizio`).
-- Foto "Chi sono": `img/carlo-team.webp` (320 px, la foto di Carlo nella sezione Team del sito FitPoint).
-  Se Carlo manda una versione più grande, sostituirla.
+- Foto "Chi sono": `img/carlo-chi-sono.webp` (verticale, sfondo bianco, mandata da Carlo), riquadro 4:5.
 - Sezione contatti = "Prenota il tuo check gratuito": in sede (C CLUB, Via Leonardo Da Vinci 95, con analisi BIA)
   o in videochiamata su Google Meet, più cosa si fa nel check. Le CTA dicono "check gratuito", non "consulenza".
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
