@@ -75,9 +75,9 @@ va online da solo in pochi secondi.
 - Logo di Carlo (CC, "CARLO CAVALLO COACH"; originale oro, sul sito ricolorato verde lime #C6F432, COACH bianco): `img/logo-cc.webp` (solo simbolo, in alto a sinistra),
   `img/logo-carlo-cavallo.webp` (completo, nel footer), `img/favicon.png`, `img/apple-touch-icon.png`.
   Ricavati dall'immagine inviata da Carlo togliendo lo sfondo nero (trasparenti).
-- Footer in 3 gruppi: Seguimi (Instagram @carlocavallo.coach, Facebook, WhatsApp), I miei centri (fitpointactive.com,
+- Footer in 3 gruppi: Seguimi (Instagram @carlocavallocoach, Facebook, WhatsApp), I miei centri (fitpointactive.com,
   Instagram FitPoint/C Club/Girl Power, Facebook FitPoint), Speed Training Store (shop, Instagram). Niente YouTube
-  (Carlo non ha un canale); @carlo.cavallo.pt è il vecchio Instagram, non usarlo.
+  (Carlo non ha un canale); @carlo.cavallo.pt e @carlocavallo.coach NON sono il suo Instagram: è @carlocavallocoach.
 - Effetti sui pulsanti (blocco "effetti sui pulsanti" in fondo al CSS): verdi si alzano, alone verde e striscia di luce,
   pressione che schiaccia, frecce che scivolano, bordati che si accendono, alone che pulsa sul WhatsApp fisso. Tutto spento con
   prefers-reduced-motion.
