@@ -29,8 +29,8 @@ va online da solo in pochi secondi.
 - "I miei centri": FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
-- Foto hero: `img/carlo-hero.webp` (quadrata, Carlo con i loghi dei centri e dello Store), mostrata
-  intera, senza riquadri sopra. `img/og-carlo.jpg` è la stessa foto per l'anteprima social.
+- Hero solo testo (niente foto: Carlo non la vuole lì perché la sua foto è già in "Chi sono").
+  Quella foto (Carlo con i loghi) resta solo in `img/og-carlo.jpg` per l'anteprima social.
 - "Risultati": 13 coppie prima/dopo (`img/risultati/N-prima|dopo.webp`, senza volto) prese dalla sezione C Club
   del repo `sito-fitpointactive`. Non visibili nella pagina: si aprono in una finestra (`<dialog>`) dal pulsante
   "Vedi i risultati" e si caricano solo all'apertura. `vercel.json` le esclude da Google (X-Robots-Tag).
