@@ -28,7 +28,7 @@ va online da solo in pochi secondi.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
 - Foto hero: `img/carlo-hero.webp` (quadrata, Carlo con i loghi dei centri e dello Store), mostrata
-  intera con il badge Mr Universo sotto. `img/og-carlo.jpg` è la stessa foto per l'anteprima social.
+  intera, senza riquadri sopra. `img/og-carlo.jpg` è la stessa foto per l'anteprima social.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
