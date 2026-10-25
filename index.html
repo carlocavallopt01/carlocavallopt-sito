@@ -201,10 +201,12 @@ form button{background:var(--accent);color:var(--on-accent);border:0;border-radi
 .form-note{font-size:13px;color:var(--muted);margin:0}
 
 footer{border-top:1px solid var(--line)}
-footer .wrap{padding-top:32px;padding-bottom:96px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;color:var(--muted);font-size:14px}
+footer .wrap{padding-top:48px;padding-bottom:96px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:40px;color:var(--muted);font-size:14px}
 footer .col{display:flex;flex-direction:column;gap:6px}
 .piede-logo{width:180px;height:auto;margin-bottom:12px}
-footer .links{display:flex;flex-wrap:wrap;gap:20px}
+footer .piede-gruppi{display:flex;flex-wrap:wrap;gap:32px 56px}
+footer .gruppo{display:flex;flex-direction:column;gap:10px}
+footer .gruppo-titolo{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 footer a{color:var(--soft)}
 
 .wa{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:999px;background:#25D366;color:#0E0F0C;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(0,0,0,.4);z-index:30}
@@ -544,13 +546,27 @@ footer a{color:var(--soft)}
       <span>© <span id="year">2026</span> Carlo Cavallo Personal Trainer · Never say… I can't do it.</span>
       <a href="mailto:info.carlocavallopt@gmail.com">info.carlocavallopt@gmail.com</a>
     </div>
-    <div class="links">
-      <a href="https://www.instagram.com/carlo.cavallo.pt/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/pages/Carlo-Cavallo-Personal-Trainer/295948633941280" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://youtu.be/8lb5obnG-L4" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.facebook.com/fitpointactive/" target="_blank" rel="noopener">FITPOINT ACTIVE Sava</a>
-      <a href="https://speedtrainingstore.com" target="_blank" rel="noopener">Speed Training Store</a>
-    </div>
+    <nav class="piede-gruppi" aria-label="Collegamenti">
+      <div class="gruppo">
+        <span class="gruppo-titolo">Seguimi</span>
+        <a href="https://www.instagram.com/carlocavallo.coach/" target="_blank" rel="noopener">Instagram @carlocavallo.coach</a>
+        <a href="https://www.facebook.com/pages/Carlo-Cavallo-Personal-Trainer/295948633941280" target="_blank" rel="noopener">Facebook</a>
+        <a class="js-wa" href="#contatti">WhatsApp 377 524 7736</a>
+      </div>
+      <div class="gruppo">
+        <span class="gruppo-titolo">I miei centri</span>
+        <a href="https://www.fitpointactive.com" target="_blank" rel="noopener">fitpointactive.com</a>
+        <a href="https://www.instagram.com/fitpoint.active.sava/" target="_blank" rel="noopener">Instagram FitPoint Active</a>
+        <a href="https://www.instagram.com/cclub.pts/" target="_blank" rel="noopener">Instagram C Club</a>
+        <a href="https://www.instagram.com/girlpowersava/" target="_blank" rel="noopener">Instagram Girl Power</a>
+        <a href="https://www.facebook.com/fitpointactive/" target="_blank" rel="noopener">Facebook FitPoint Active</a>
+      </div>
+      <div class="gruppo">
+        <span class="gruppo-titolo">Speed Training Store</span>
+        <a href="https://speedtrainingstore.com" target="_blank" rel="noopener">Shop online</a>
+        <a href="https://www.instagram.com/speedtraining.store/" target="_blank" rel="noopener">Instagram @speedtraining.store</a>
+      </div>
+    </nav>
   </div>
 </footer>
 

@@ -54,6 +54,9 @@ va online da solo in pochi secondi.
 - Logo di Carlo (CC, "CARLO CAVALLO COACH"; originale oro, sul sito ricolorato verde lime #C6F432, COACH bianco): `img/logo-cc.webp` (solo simbolo, in alto a sinistra),
   `img/logo-carlo-cavallo.webp` (completo, nel footer), `img/favicon.png`, `img/apple-touch-icon.png`.
   Ricavati dall'immagine inviata da Carlo togliendo lo sfondo nero (trasparenti).
+- Footer in 3 gruppi: Seguimi (Instagram @carlocavallo.coach, Facebook, WhatsApp), I miei centri (fitpointactive.com,
+  Instagram FitPoint/C Club/Girl Power, Facebook FitPoint), Speed Training Store (shop, Instagram). Niente YouTube
+  (Carlo non ha un canale); @carlo.cavallo.pt è il vecchio Instagram, non usarlo.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI.
 - L'app Speed Training Program non esiste più: non citarla sul sito.
