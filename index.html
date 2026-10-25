@@ -89,7 +89,7 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .vip{margin:0;position:relative;border-radius:16px;overflow:hidden;background:var(--surface-2);container-type:inline-size}
 .vip img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:top}
 .vip-video{margin-top:40px}
-.vip-video-griglia{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:720px}
+.vip-video-griglia{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:960px}
 .vip video{display:block;width:100%;height:auto;aspect-ratio:480/616;object-fit:cover;background:var(--surface-2)}
 .vip-video .vip figcaption{font-size:clamp(16px,6cqw,30px)}
 .vip figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 10px 16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(20px,1.8vw,26px);font-size:clamp(20px,11cqw,40px);line-height:1;text-transform:uppercase;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,0));text-shadow:0 2px 8px rgba(0,0,0,.5)}
@@ -127,8 +127,9 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .scorri{display:none;margin:12px 0 0;color:var(--muted);font-size:13px}
 @media (max-width:700px){
   .block{padding:72px 0}
-  .vip-row,.negozi{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -24px;padding:0 24px 8px;scroll-padding:0 24px;scrollbar-width:none}
-  .vip-row::-webkit-scrollbar,.negozi::-webkit-scrollbar{display:none}
+  .vip-row,.negozi,.vip-video-griglia{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -24px;padding:0 24px 8px;scroll-padding:0 24px;scrollbar-width:none}
+  .vip-row::-webkit-scrollbar,.negozi::-webkit-scrollbar,.vip-video-griglia::-webkit-scrollbar{display:none}
+  .vip-video .vip{flex:0 0 62%}
   .vip{flex:0 0 72%;scroll-snap-align:start}
   .negozio{flex:0 0 82%;scroll-snap-align:start}
   .scorri{display:block}
@@ -323,6 +324,7 @@ footer a{color:var(--soft)}
       <div class="vip-video-griglia">
         <figure class="vip"><video data-auto muted loop playsinline preload="none" poster="/img/video-sperti.webp" width="480" height="616" aria-label="Gianni Sperti si allena con Carlo Cavallo"><source src="/img/video-sperti.mp4" type="video/mp4"></video><figcaption>Gianni Sperti</figcaption></figure>
         <figure class="vip"><video data-auto muted loop playsinline preload="none" poster="/img/video-colombari.webp" width="480" height="616" aria-label="Martina Colombari e Billy Costacurta in allenamento con Carlo Cavallo"><source src="/img/video-colombari.mp4" type="video/mp4"></video><figcaption>Colombari e Costacurta</figcaption></figure>
+        <figure class="vip"><video data-auto muted loop playsinline preload="none" poster="/img/video-iannone.webp" width="480" height="616" aria-label="Andrea Iannone si allena con Carlo Cavallo"><source src="/img/video-iannone.mp4" type="video/mp4"></video><figcaption>Andrea Iannone</figcaption></figure>
       </div>
     </div>
   </div>
