@@ -59,6 +59,8 @@ va online da solo in pochi secondi.
   "Moduli del sito" per le chiamate di Vittoria, ma il consenso di questo sito NON cita l'assistente virtuale.
 - Privacy: `privacy.html` (servita come /privacy grazie a `cleanUrls` in `vercel.json`). Titolare indicato: FIT POINT ACTIVE
   SSD a r.l. (P.IVA 03417200734), anche nel footer: da confermare con Carlo.
+- Domande frequenti (`#faq`, prima dei contatti, + dati FAQPage per Google): palestra non serve per il Coaching Online,
+  check di circa 30 minuti, si può iniziare da zero (risposte di Carlo); check gratuito e differenza Coaching/Video Coaching.
 - Speed Training Store: blocco `#store` dentro "I miei centri" (3 negozi Sava/Manduria/Francavilla con orari,
   shop online speedtrainingstore.com, WhatsApp negozio 393208526928). Dati e foto dal repo `sito-fitpointactive`.
 - Logo di Carlo (CC, "CARLO CAVALLO COACH"; originale oro, sul sito ricolorato verde lime #C6F432, COACH bianco): `img/logo-cc.webp` (solo simbolo, in alto a sinistra),

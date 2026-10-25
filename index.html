@@ -181,6 +181,15 @@ dialog::backdrop{background:rgba(0,0,0,.8)}
 .chips li{border:1px solid var(--line-2);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
 .chips.alt li{background:var(--surface);border-color:var(--line);color:var(--soft)}
 
+.faq{display:flex;flex-wrap:wrap;gap:24px 56px;align-items:flex-start}
+.faq .head{flex:1 1 300px;margin:0}
+.faq-lista{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.faq-lista details{background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.faq-lista summary{list-style:none;cursor:pointer;padding:20px 56px 20px 22px;font-weight:800;font-size:17px;position:relative;min-height:44px}
+.faq-lista summary::-webkit-details-marker{display:none}
+.faq-lista summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-family:'Archivo',sans-serif;font-size:26px;color:var(--accent);line-height:1}
+.faq-lista details[open] summary::after{content:"−"}
+.faq-lista details p{margin:0;padding:0 22px 20px;color:var(--soft);font-size:16px;line-height:1.6}
 .cta{background:var(--accent);color:var(--on-accent);border-radius:32px;padding:clamp(24px,5vw,64px);display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start}
 .cta-text{flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:18px}
 .cta-text h2{font-size:clamp(36px,5vw,64px);line-height:.95;letter-spacing:-.02em}
@@ -230,6 +239,7 @@ footer a{color:var(--soft)}
 
 .wa{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:999px;background:#25D366;color:#0E0F0C;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(0,0,0,.4);z-index:30}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Serve la palestra per il Coaching Online?", "acceptedAnswer": {"@type": "Answer", "text": "No. Puoi allenarti anche a casa: il programma lo preparo in base a dove ti alleni e all'attrezzatura che hai. Se invece vai in palestra, lo costruisco su quella."}}, {"@type": "Question", "name": "Quanto dura il check gratuito?", "acceptedAnswer": {"@type": "Answer", "text": "Circa 30 minuti. Puoi farlo in sede a Sava, al C CLUB, oppure in videochiamata su Google Meet, ovunque tu sia."}}, {"@type": "Question", "name": "Posso iniziare se non mi sono mai allenato?", "acceptedAnswer": {"@type": "Answer", "text": "Certo. Si parte dalle basi e dalla tecnica, con carichi adatti a te. Al check capisco il tuo punto di partenza e costruiamo il percorso da lì."}}, {"@type": "Question", "name": "Il check è davvero gratuito?", "acceptedAnswer": {"@type": "Answer", "text": "Sì, è gratuito e senza impegno. Serve a conoscerci, capire il tuo obiettivo e scegliere insieme il percorso più adatto."}}, {"@type": "Question", "name": "Che differenza c'è tra Coaching Online e Video Coaching?", "acceptedAnswer": {"@type": "Answer", "text": "Con il Coaching Online ti alleni quando vuoi con il programma che ti preparo: mi mandi i video e ti correggo in chat. Con il Video Coaching ci colleghiamo in videochiamata per circa un'ora e ti seguo in diretta, esercizio per esercizio."}}]}</script>
 </head>
 <body>
 
@@ -498,6 +508,22 @@ footer a{color:var(--soft)}
           <li>Alimentazione</li><li>Supplementazione</li><li>Allenamento per le donne</li><li>Postural Gym</li><li>Recupero funzionale spalle, ginocchia, caviglie</li><li>Schede di allenamento specifiche</li><li>Ipertrofia: programmazione e tecnica</li><li>Cardio fitness e dimagrimento</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="block" style="padding-top:0">
+  <div class="wrap faq">
+    <div class="head">
+      <span class="eyebrow">Domande frequenti</span>
+      <h2 class="display">Hai qualche dubbio?</h2>
+    </div>
+    <div class="faq-lista">
+      <details><summary>Serve la palestra per il Coaching Online?</summary><p>No. Puoi allenarti anche a casa: il programma lo preparo in base a dove ti alleni e all'attrezzatura che hai. Se invece vai in palestra, lo costruisco su quella.</p></details>
+      <details><summary>Quanto dura il check gratuito?</summary><p>Circa 30 minuti. Puoi farlo in sede a Sava, al C CLUB, oppure in videochiamata su Google Meet, ovunque tu sia.</p></details>
+      <details><summary>Posso iniziare se non mi sono mai allenato?</summary><p>Certo. Si parte dalle basi e dalla tecnica, con carichi adatti a te. Al check capisco il tuo punto di partenza e costruiamo il percorso da lì.</p></details>
+      <details><summary>Il check è davvero gratuito?</summary><p>Sì, è gratuito e senza impegno. Serve a conoscerci, capire il tuo obiettivo e scegliere insieme il percorso più adatto.</p></details>
+      <details><summary>Che differenza c'è tra Coaching Online e Video Coaching?</summary><p>Con il Coaching Online ti alleni quando vuoi con il programma che ti preparo: mi mandi i video e ti correggo in chat. Con il Video Coaching ci colleghiamo in videochiamata per circa un'ora e ti seguo in diretta, esercizio per esercizio.</p></details>
     </div>
   </div>
 </section>
