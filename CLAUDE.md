@@ -12,6 +12,8 @@ va online da solo in pochi secondi.
 ## Come lavora Carlo
 - Non usa terminale o ambienti locali: prova tutto dal browser o dal telefono.
 - Le modifiche al codice, i commit e la pubblicazione li fa Claude. Spiegare in italiano, semplice.
+- REGOLA: pubblicare subito ogni modifica, senza aspettare che Carlo scriva "pubblica". Dopo il push sul ramo
+  di lavoro, portarla anche su `main` (va online da sola). Se c'è da correggere, si corregge dopo.
 
 ## Contenuti
 - Design: sfondo scuro #0E0F0C, accento verde lime #C6F432 (variabili CSS in `:root`),
