@@ -70,15 +70,24 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
 .photo.has-img{padding:0;border:0}
 
-/* vip */
-.vip-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;max-width:1200px;margin:0 auto;padding:0 24px}
-.vip{margin:0;position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--surface-2)}
-.vip img{width:100%;height:100%;object-fit:cover;object-position:center top}
-.vip figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 16px;background:linear-gradient(transparent,rgba(14,15,12,.92));font-family:'Archivo',sans-serif;font-weight:800;font-size:17px}
-@media (max-width:900px){
-  .vip-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px}
-  .vip{flex:0 0 62%;scroll-snap-align:start}
-}
+/* vip (stesso stile di fitpointactive.com) */
+.vip-nomi{margin:0;color:var(--soft);font-size:17px}
+.vip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.vip{margin:0;position:relative;border-radius:16px;overflow:hidden;background:var(--surface-2)}
+.vip img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.vip figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 10px 16px;text-align:center;font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(22px,2.1vw,34px);line-height:1;text-transform:uppercase;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,0));text-shadow:0 2px 8px rgba(0,0,0,.5)}
+
+/* centri */
+.centri{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.centro{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:24px;overflow:hidden;text-decoration:none;transition:transform .2s,border-color .2s}
+.centro:hover{transform:translateY(-4px);border-color:var(--c)}
+.centro>img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.centro-corpo{padding:24px 28px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.centro-tag{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.centro-logo{width:100%;height:auto;max-width:240px;margin-left:-6px;mix-blend-mode:lighten}
+.centro p{margin:0;color:var(--soft);font-size:16px;line-height:1.6}
+.centro .orari{font-size:14px;color:var(--muted)}
+.centro .vai{margin-top:auto;padding-top:8px;font-weight:800;color:var(--c)}
 .badge{position:absolute;left:-20px;bottom:32px;background:var(--text);color:var(--bg);border-radius:18px;padding:16px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 20px 40px rgba(0,0,0,.35)}
 .badge-ico{width:44px;height:44px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;flex:none}
 .badge strong{font-family:'Archivo',sans-serif;font-size:20px;display:block}
@@ -167,6 +176,7 @@ footer a{color:var(--soft)}
     </button>
     <nav id="menu" class="menu" aria-label="Menu principale">
       <a href="#servizi">Servizi</a>
+      <a href="#centri">I miei centri</a>
       <a href="#coaching">Coaching Online</a>
       <a href="#risultati">Risultati</a>
       <a href="#chi-sono">Chi sono</a>
@@ -214,14 +224,16 @@ footer a{color:var(--soft)}
     <div class="head">
       <span class="eyebrow">Si sono allenati con me</span>
       <h2 class="display">Anche i VIP scelgono il metodo</h2>
+      <p class="vip-nomi">Francesca Tocca · Martina Colombari · Billy Costacurta · Andrea Iannone · Gianni Sperti</p>
     </div>
-  </div>
-  <div class="vip-row">
-    <figure class="vip"><img src="/img/vip-1.webp" alt="Carlo Cavallo con Francesca Tocca" width="700" height="700" loading="lazy"><figcaption>Francesca Tocca</figcaption></figure>
-    <figure class="vip"><img src="/img/vip-2.webp" alt="Carlo Cavallo con Martina Colombari" width="700" height="787" loading="lazy"><figcaption>Martina Colombari</figcaption></figure>
-    <figure class="vip"><img src="/img/vip-3.webp" alt="Carlo Cavallo con Billy Costacurta" width="700" height="817" loading="lazy"><figcaption>Billy Costacurta</figcaption></figure>
-    <figure class="vip"><img src="/img/vip-4.webp" alt="Carlo Cavallo con Andrea Iannone" width="700" height="1012" loading="lazy"><figcaption>Andrea Iannone</figcaption></figure>
-    <figure class="vip"><img src="/img/vip-5.webp" alt="Carlo Cavallo con Gianni Sperti" width="700" height="789" loading="lazy"><figcaption>Gianni Sperti</figcaption></figure>
+    <div class="vip-row">
+      <figure class="vip"><img src="/img/vip-1.webp" alt="Carlo Cavallo con Francesca Tocca" width="700" height="700" loading="lazy"><figcaption>Francesca Tocca</figcaption></figure>
+      <figure class="vip"><img src="/img/vip-2.webp" alt="Carlo Cavallo con Martina Colombari" width="700" height="787" loading="lazy"><figcaption>Martina Colombari</figcaption></figure>
+      <figure class="vip"><img src="/img/vip-3.webp" alt="Carlo Cavallo con Billy Costacurta" width="700" height="817" loading="lazy"><figcaption>Billy Costacurta</figcaption></figure>
+      <!-- il nome di Iannone è già scritto nella foto -->
+      <figure class="vip"><img src="/img/vip-4.webp" alt="Carlo Cavallo con Andrea Iannone" width="700" height="1012" loading="lazy"></figure>
+      <figure class="vip"><img src="/img/vip-5.webp" alt="Carlo Cavallo con Gianni Sperti" width="700" height="789" loading="lazy"><figcaption>Gianni Sperti</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -250,6 +262,47 @@ footer a{color:var(--soft)}
         <p>Massa magra e grassa, acqua corporea, metabolismo basale e massa muscolare degli arti. Fissiamo insieme il tuo peso obiettivo e misuriamo i progressi.</p>
         <a href="#contatti">Prenota il check →</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="centri" class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">I miei centri</span>
+      <h2 class="display">Tre centri a Sava, un solo metodo</h2>
+    </div>
+    <div class="centri">
+      <a class="centro" style="--c:#f5b400" href="https://www.fitpointactive.com/fitpoint-active" target="_blank" rel="noopener">
+        <img src="/img/fp-sala-pesi.webp" alt="La sala pesi di FitPoint Active" width="869" height="1200" loading="lazy">
+        <span class="centro-corpo">
+          <span class="centro-tag">Sala open</span>
+          <img class="centro-logo" src="/img/logo-fitpoint.webp" alt="FitPoint Active" width="640" height="231" loading="lazy">
+          <p>Attrezzi, pesi e cardio. Ti alleni quando vuoi, con il tuo ritmo.</p>
+          <p class="orari">Via Leonardo Da Vinci 95, Sava (TA)</p>
+          <span class="vai">Scopri FitPoint Active →</span>
+        </span>
+      </a>
+      <a class="centro" style="--c:#d4a64a" href="https://www.fitpointactive.com/c-club" target="_blank" rel="noopener">
+        <img src="/img/cclub-lat-machine.webp" alt="Allenamento nello studio C Club" width="900" height="1200" loading="lazy">
+        <span class="centro-corpo">
+          <span class="centro-tag">Studio personal</span>
+          <img class="centro-logo" src="/img/logo-cclub.webp" alt="C Club" width="640" height="231" loading="lazy">
+          <p>Personal training 1-to-1 con EMS, Enjoy Bike, Beauty Box e VIP Metabolicenter.</p>
+          <p class="orari">Via Leonardo Da Vinci 95, Sava (TA) – piano superiore</p>
+          <span class="vai">Scopri il C Club →</span>
+        </span>
+      </a>
+      <a class="centro" style="--c:#f02bbe" href="https://www.fitpointactive.com/girl-power" target="_blank" rel="noopener">
+        <img src="/img/gp-sala-blu.webp" alt="La sala macchine di Girl Power con le luci blu" width="1200" height="900" loading="lazy">
+        <span class="centro-corpo">
+          <span class="centro-tag">Solo donne</span>
+          <img class="centro-logo" src="/img/logo-girlpower.webp" alt="Girl Power" width="640" height="231" loading="lazy">
+          <p>Vacum RX, Pilates Reformer, i-Face e personal training in un ambiente tutto al femminile.</p>
+          <p class="orari">Via Teano 13, Sava (TA)</p>
+          <span class="vai">Scopri Girl Power →</span>
+        </span>
+      </a>
     </div>
   </div>
 </section>

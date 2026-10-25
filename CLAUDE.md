@@ -16,12 +16,17 @@ va online da solo in pochi secondi.
 ## Contenuti
 - Design: sfondo scuro #0E0F0C, accento verde lime #C6F432 (variabili CSS in `:root`),
   font Archivo (titoli) + Manrope (testo). Responsive, menu a scomparsa sotto 900px.
-- Sezioni: hero, numeri, "Si sono allenati con me" (foto VIP), servizi, Coaching Online,
+- Sezioni: hero, numeri, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
   risultati, chi sono (certificazioni e master), modulo contatti, footer.
 - WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). Il modulo apre
   WhatsApp con nome, telefono, obiettivo e servizio già scritti.
 - Foto VIP (`img/vip-1..5.webp`) prese dal repo `sito-fitpointactive`:
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
+- Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 non ha didascalia:
+  il nome di Iannone è già scritto nella foto.
+- "I miei centri": FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
+  Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
+  `sito-fitpointactive`, che non va modificato da qui.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
