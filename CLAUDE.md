@@ -29,9 +29,12 @@ va online da solo in pochi secondi.
   `sito-fitpointactive`, che non va modificato da qui.
 - Foto hero: `img/carlo-hero.webp` (quadrata, Carlo con i loghi dei centri e dello Store), mostrata
   intera, senza riquadri sopra. `img/og-carlo.jpg` è la stessa foto per l'anteprima social.
+- "Risultati": 13 coppie prima/dopo (`img/risultati/N-prima|dopo.webp`, senza volto) prese dalla sezione C Club
+  del repo `sito-fitpointactive`. Non visibili nella pagina: si aprono in una finestra (`<dialog>`) dal pulsante
+  "Vedi i risultati" e si caricano solo all'apertura. `vercel.json` le esclude da Google (X-Robots-Tag).
+  Non ci sono recensioni scritte: aggiungerle solo se Carlo le fornisce, mai inventarle.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
 ## Da fare
-- Sezione "Risultati": i testi tra [parentesi quadre] sono segnaposto. Servono 3 recensioni vere
-  con foto prima/dopo. Non inventare recensioni o numeri.
+- Nulla in sospeso: le prossime modifiche le decide Carlo man mano.

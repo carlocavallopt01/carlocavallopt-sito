@@ -1,0 +1,10 @@
+{
+  "headers": [
+    {
+      "source": "/img/risultati/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, noimageindex" }
+      ]
+    }
+  ]
+}

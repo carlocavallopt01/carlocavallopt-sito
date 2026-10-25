@@ -33,6 +33,7 @@ img{max-width:100%;display:block}
 .eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;border-radius:999px;font-weight:800;font-size:17px;padding:18px 28px;min-height:44px;transition:transform .15s ease}
 .btn:hover{transform:translateY(-2px)}
+button.btn{font-family:inherit;border:0;cursor:pointer}
 .btn-accent{background:var(--accent);color:var(--on-accent)}
 .btn-ghost{border:1.5px solid #4A4D42;color:var(--text);font-weight:700}
 section{scroll-margin-top:80px}
@@ -121,14 +122,24 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .steps h3{margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-size:24px}
 .steps p{margin:0;color:var(--soft);font-size:16px;line-height:1.6}
 
-.review{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
-.ba{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;background:var(--line)}
-.ba div{aspect-ratio:3/4;background:var(--surface-2);display:flex;align-items:flex-end;padding:12px;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);background-size:cover;background-position:center}
-.ba div+div{color:var(--accent);background-color:#22241D}
-.review figcaption{padding:24px;display:flex;flex-direction:column;gap:12px}
-.review .res{font-family:'Archivo',sans-serif;font-weight:800;font-size:22px;color:var(--accent)}
-.review p{margin:0;color:var(--soft);font-size:16px;line-height:1.6}
-.review .who{font-weight:700;font-size:15px}
+.ris{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(28px,4vw,48px)}
+.ris-testo{margin:0;color:var(--soft);font-size:17px;line-height:1.6;max-width:560px}
+dialog{width:min(1100px,calc(100% - 32px));max-height:calc(100% - 32px);margin:auto;padding:0;border:1px solid var(--line-2);border-radius:28px;background:var(--bg);color:var(--text)}
+dialog::backdrop{background:rgba(0,0,0,.8)}
+.fin{position:relative;padding:clamp(24px,4vw,40px);display:flex;flex-direction:column;gap:14px}
+.fin h2{font-size:clamp(28px,4vw,44px);padding-right:48px}
+.chiudi{position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--text);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.pd-lista{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start;margin-top:8px}
+.pd{margin:0;padding:10px;border-radius:20px;background:var(--surface);border:1px solid var(--line)}
+.pd-coppia{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.pd-foto{position:relative;aspect-ratio:4/5;border-radius:12px;background:var(--surface-2) center top/cover no-repeat;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.pd-tag{position:absolute;left:8px;bottom:8px;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.75);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.pd-tag.dopo{background:var(--accent);color:var(--on-accent)}
+.pd-nota{margin:8px 4px 2px;color:var(--soft);font-size:14px;text-align:center}
+.pd-avviso{margin:4px 0 0;color:var(--muted);font-size:13px}
+#ris-cta{align-self:flex-start}
+@media (max-width:900px){.pd-lista{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.pd-lista{grid-template-columns:1fr}}
 
 .about{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}
 .about .photo{flex:1 1 360px;min-width:0;aspect-ratio:1/1}
@@ -318,26 +329,42 @@ footer a{color:var(--soft)}
 
 <section id="risultati" class="block">
   <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Risultati reali</span>
-      <h2 class="display">Parlano loro, non io</h2>
-    </div>
-    <!-- RECENSIONI: sostituire i testi tra parentesi con recensioni vere e le foto prima/dopo -->
-    <div class="cards">
-      <figure class="review">
-        <div class="ba"><div>PRIMA</div><div>DOPO</div></div>
-        <figcaption><span class="res">[Risultato]</span><p>[Recensione vera di un cliente: cosa è cambiato, in due righe.]</p><span class="who">[Nome C.]</span></figcaption>
-      </figure>
-      <figure class="review">
-        <div class="ba"><div>PRIMA</div><div>DOPO</div></div>
-        <figcaption><span class="res">[Risultato]</span><p>[Recensione vera di un cliente del Coaching Online.]</p><span class="who">[Nome C.]</span></figcaption>
-      </figure>
-      <figure class="review">
-        <div class="ba"><div>PRIMA</div><div>DOPO</div></div>
-        <figcaption><span class="res">[Risultato]</span><p>[Recensione vera di un cliente in studio.]</p><span class="who">[Nome C.]</span></figcaption>
-      </figure>
+    <div class="ris">
+      <div class="head" style="margin:0">
+        <span class="eyebrow">Risultati reali</span>
+        <h2 class="display">Parlano i risultati, non io</h2>
+        <p class="ris-testo">Alcune trasformazioni dei miei clienti con i percorsi di personal training al C CLUB, ottenute dai 3 ai 6 mesi.</p>
+      </div>
+      <button class="btn btn-accent" type="button" id="apri-risultati">Vedi i risultati
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </div>
   </div>
+  <!-- Foto prima/dopo dal sito FitPoint (C Club): senza volto, non indicizzate (vercel.json), caricate solo all'apertura -->
+  <dialog id="finestra-risultati" aria-labelledby="ris-titolo">
+    <div class="fin">
+      <button class="chiudi" type="button" aria-label="Chiudi">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <span class="eyebrow">Prima e dopo · C CLUB</span>
+      <h2 class="display" id="ris-titolo">Risultati dai 3 ai 6 mesi</h2>
+      <div class="pd-lista">
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/9-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/9-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/10-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/10-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/11-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/11-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/12-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/12-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/13-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/13-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/7-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/7-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/8-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/8-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/4-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/4-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/2-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/2-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/6-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/6-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div><p class="pd-nota">In poco più di 4 mesi</p></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/3-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/3-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/5-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/5-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+        <article class="pd"><div class="pd-coppia"><div class="pd-foto" role="img" aria-label="Prima" data-bg="/img/risultati/1-prima.webp"><span class="pd-tag">Prima</span></div><div class="pd-foto" role="img" aria-label="Dopo" data-bg="/img/risultati/1-dopo.webp"><span class="pd-tag dopo">Dopo</span></div></div></article>
+      </div>
+      <p class="pd-avviso">I risultati variano da persona a persona e dipendono da punto di partenza, costanza e alimentazione.</p>
+      <a class="btn btn-accent" href="#contatti" id="ris-cta">Voglio iniziare anch'io</a>
+    </div>
+  </dialog>
 </section>
 
 <section id="chi-sono" class="block" style="padding-top:0">
@@ -453,6 +480,15 @@ toggle.addEventListener('click', function(){
   toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }); });
+var fin = document.getElementById('finestra-risultati');
+document.getElementById('apri-risultati').addEventListener('click', function(){
+  fin.querySelectorAll('[data-bg]').forEach(function(d){ d.style.backgroundImage = "url('" + d.getAttribute('data-bg') + "')"; d.removeAttribute('data-bg'); });
+  fin.showModal();
+});
+fin.querySelector('.chiudi').addEventListener('click', function(){ fin.close(); });
+fin.addEventListener('click', function(e){ if (e.target === fin) fin.close(); });
+document.getElementById('ris-cta').addEventListener('click', function(){ fin.close(); });
+fin.addEventListener('contextmenu', function(e){ if (e.target.closest('.pd-foto')) e.preventDefault(); });
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
