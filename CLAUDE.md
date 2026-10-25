@@ -43,6 +43,9 @@ va online da solo in pochi secondi.
   o in videochiamata su Google Meet, più cosa si fa nel check. Le CTA dicono "check gratuito", non "consulenza".
 - Speed Training Store: blocco `#store` dentro "I miei centri" (3 negozi Sava/Manduria/Francavilla con orari,
   shop online speedtrainingstore.com, WhatsApp negozio 393208526928). Dati e foto dal repo `sito-fitpointactive`.
+- Logo di Carlo (CC oro #FDB95A, "CARLO CAVALLO COACH"): `img/logo-cc.webp` (solo simbolo, in alto a sinistra),
+  `img/logo-carlo-cavallo.webp` (completo, nel footer), `img/favicon.png`, `img/apple-touch-icon.png`.
+  Ricavati dall'immagine inviata da Carlo togliendo lo sfondo nero (trasparenti).
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 

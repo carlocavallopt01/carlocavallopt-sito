@@ -14,7 +14,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://www.carlocavallopt.com/">
 <meta name="theme-color" content="#0E0F0C">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C6F432'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%230E0F0C'%3ECC%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -42,9 +43,9 @@ section{scroll-margin-top:80px}
 header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdrop-filter:blur(10px);border-bottom:1px solid transparent}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;max-width:1200px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand-mark{width:40px;height:40px;border-radius:10px;background:var(--accent);color:var(--on-accent);font-family:'Archivo',sans-serif;font-weight:900;font-size:17px;display:flex;align-items:center;justify-content:center}
+.brand-mark{width:42px;height:42px}
 .brand-name{font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;letter-spacing:.02em}
-.brand-name span{color:var(--muted);font-weight:700}
+.brand-name span{color:#FDB95A;font-weight:700;letter-spacing:.12em;font-size:14px}
 .menu{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600}
 .menu a{text-decoration:none;color:var(--soft)}
 .menu a:hover{color:var(--text)}
@@ -190,6 +191,7 @@ form button{background:var(--accent);color:var(--on-accent);border:0;border-radi
 footer{border-top:1px solid var(--line)}
 footer .wrap{padding-top:32px;padding-bottom:96px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;color:var(--muted);font-size:14px}
 footer .col{display:flex;flex-direction:column;gap:6px}
+.piede-logo{width:180px;height:auto;margin-bottom:12px}
 footer .links{display:flex;flex-wrap:wrap;gap:20px}
 footer a{color:var(--soft)}
 
@@ -201,8 +203,8 @@ footer a{color:var(--soft)}
 <header class="top">
   <div class="nav">
     <a class="brand" href="#top" aria-label="Carlo Cavallo Personal Trainer, torna su">
-      <span class="brand-mark">CC</span>
-      <span class="brand-name">CARLO CAVALLO <span>PT</span></span>
+      <img class="brand-mark" src="/img/logo-cc.webp" alt="" width="128" height="128">
+      <span class="brand-name">CARLO CAVALLO <span>COACH</span></span>
     </a>
     <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu">
       <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -521,6 +523,7 @@ footer a{color:var(--soft)}
 <footer>
   <div class="wrap">
     <div class="col">
+      <img class="piede-logo" src="/img/logo-carlo-cavallo.webp" alt="Carlo Cavallo Coach" width="800" height="529" loading="lazy">
       <span>© <span id="year">2026</span> Carlo Cavallo Personal Trainer · Never say I can't.</span>
       <a href="mailto:info.carlocavallopt@gmail.com">info.carlocavallopt@gmail.com</a>
     </div>
