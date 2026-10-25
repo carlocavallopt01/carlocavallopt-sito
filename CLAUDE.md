@@ -24,8 +24,8 @@ va online da solo in pochi secondi.
   WhatsApp con nome, telefono, obiettivo, dove (in sede o Google Meet) e servizio già scritti.
 - Foto VIP (`img/vip-1..5.webp`) prese dal repo `sito-fitpointactive`:
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
-- Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 non ha didascalia:
-  il nome di Iannone è già scritto nella foto.
+- Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 è ritagliata in basso
+  per togliere il nome scritto nella foto originale: ha la didascalia come le altre.
 - "I miei centri": FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
