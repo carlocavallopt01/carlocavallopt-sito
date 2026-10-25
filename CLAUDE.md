@@ -25,8 +25,8 @@ va online da solo in pochi secondi.
   WhatsApp con nome, telefono, email, obiettivo, dove (in sede o Google Meet) e servizio già scritti.
 - Foto VIP (`img/vip-1..5.webp`) prese dal repo `sito-fitpointactive`:
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
-- Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 è ritagliata in basso
-  per togliere il nome scritto nella foto originale: ha la didascalia come le altre.
+- Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 (Iannone) è la foto
+  mandata da Carlo il 25/10 (lui e Iannone alla leg extension), ritagliata 4:5.
 - Sotto le foto VIP "In allenamento con me": `img/video-sperti.mp4`, `img/video-colombari.mp4` e `img/video-iannone.mp4` (da TikTok/Instagram di Carlo, ritagliati
   in basso per togliere i nomi Instagram), muti, in loop, partono solo quando sono sullo schermo.
 - "I miei centri": titolo "Tre centri a Sava, un solo obiettivo: tu.", testo "non sto dietro a un PC a mandare
