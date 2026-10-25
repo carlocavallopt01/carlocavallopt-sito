@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.carlocavallopt.com/">
 <meta property="og:locale" content="it_IT">
-<meta property="og:image" content="https://www.carlocavallopt.com/img/vip-3.webp">
+<meta property="og:image" content="https://www.carlocavallopt.com/img/og-carlo.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://www.carlocavallopt.com/">
 <meta name="theme-color" content="#0E0F0C">
@@ -69,6 +69,7 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .photo{aspect-ratio:4/5;border-radius:28px;background:var(--surface-2);border:1px dashed #4A4D42;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted);font-size:15px;text-align:center;padding:24px;overflow:hidden}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
 .photo.has-img{padding:0;border:0}
+.photo.square{aspect-ratio:1/1}
 
 /* vip (stesso stile di fitpointactive.com) */
 .vip-nomi{margin:0;color:var(--soft);font-size:17px}
@@ -93,6 +94,7 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .badge strong{font-family:'Archivo',sans-serif;font-size:20px;display:block}
 .badge small{font-size:13px;color:#4A4D42}
 @media (max-width:600px){.badge{left:12px;right:12px;bottom:16px}}
+.photo.square+.badge{position:static;margin-top:16px;align-self:flex-start;display:inline-flex}
 
 /* stats */
 .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -200,8 +202,8 @@ footer a{color:var(--soft)}
     </div>
   </div>
   <div class="hero-media">
-    <div class="photo has-img">
-      <img src="/img/vip-3.webp" alt="Carlo Cavallo in palestra con Billy Costacurta" width="700" height="817" fetchpriority="high">
+    <div class="photo has-img square">
+      <img src="/img/carlo-hero.webp" alt="Carlo Cavallo con i loghi di FitPoint Active, C Club, Girl Power e Speed Training Store" width="1000" height="1000" fetchpriority="high">
     </div>
     <div class="badge">
       <span class="badge-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E0F0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span>

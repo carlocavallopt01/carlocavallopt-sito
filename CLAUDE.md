@@ -27,10 +27,11 @@ va online da solo in pochi secondi.
 - "I miei centri": FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
+- Foto hero: `img/carlo-hero.webp` (quadrata, Carlo con i loghi dei centri e dello Store), mostrata
+  intera con il badge Mr Universo sotto. `img/og-carlo.jpg` è la stessa foto per l'anteprima social.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
 ## Da fare
 - Sezione "Risultati": i testi tra [parentesi quadre] sono segnaposto. Servono 3 recensioni vere
   con foto prima/dopo. Non inventare recensioni o numeri.
-- Foto hero: oggi c'è vip-3; meglio una foto verticale solo di Carlo in palestra.
