@@ -43,7 +43,8 @@ va online da solo in pochi secondi.
 - Coaching Online (`#coaching`): "Ti seguo anche a distanza", per chi non può venire nei centri; 4 passi (check,
   programma, video in chat, aggiustamento settimanale) + rimando al Video Coaching.
 - Biografia "Chi sono" scritta con Carlo: iniziato da ragazzo per passione, titoli 2011, poi ha smesso di gareggiare
-  per seguire i clienti; allena donne (tonificare), dimagrimento, massa, postura/dolori. Motto: "Never say… I can't do it"
+  per seguire i clienti; allena donne (tonificare), dimagrimento, massa, postura/dolori. Ha visto persone su cui nessuno
+  avrebbe scommesso cambiare fisico e vita. Motto: "Never say… I can't do it"
   (Non dire mai… non ce la faccio), anche nel footer.
 - Foto "Chi sono": `img/carlo-chi-sono.webp` (verticale, sfondo bianco, mandata da Carlo), riquadro 4:5.
 - Sezione contatti = "Prenota il tuo check gratuito": in sede (C CLUB, Via Leonardo Da Vinci 95, con analisi BIA)
