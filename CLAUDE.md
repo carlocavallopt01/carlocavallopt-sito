@@ -20,7 +20,8 @@ va online da solo in pochi secondi.
   font Archivo (titoli) + Manrope (testo). Responsive, menu a scomparsa sotto 1100px.
 - Sezioni: hero, numeri, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
   risultati, chi sono (certificazioni e master), modulo contatti, footer.
-- WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). Il modulo apre
+- WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). È il numero privato di Carlo: va bene sul sito
+  per WhatsApp (confermato), ma Vittoria non lo dà mai e non promette che richiama lui. Il modulo apre
   WhatsApp con nome, telefono, email, obiettivo, dove (in sede o Google Meet) e servizio già scritti.
 - Foto VIP (`img/vip-1..5.webp`) prese dal repo `sito-fitpointactive`:
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
