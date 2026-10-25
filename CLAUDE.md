@@ -32,7 +32,9 @@ va online da solo in pochi secondi.
   FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
-- Hero: niente foto di Carlo (è già in "Chi sono"); sfondo `fp-sala-pesi.webp` scurito, a tutto schermo da telefono.
+- Hero: niente foto di Carlo (è già in "Chi sono"); sfondo = video C CLUB `img/video-hero.mp4` (11 s, muto, in loop,
+  dal TikTok di Carlo; immagine ferma `video-hero.webp` se movimento ridotto o risparmio dati), a tutto schermo da telefono; da computer occupa
+  la metà destra, sfumato verso il testo (verticale: a tutta larghezza diventerebbe sgranato).
   Tolta la fascia dei numeri (14 certificazioni ecc.): sono già più in basso. Da telefono VIP e negozi scorrono di lato.
   Quella foto (Carlo con i loghi) resta solo in `img/og-carlo.jpg` per l'anteprima social.
 - "Risultati": 13 coppie prima/dopo (`img/risultati/N-prima|dopo.webp`, senza volto) prese dalla sezione C Club

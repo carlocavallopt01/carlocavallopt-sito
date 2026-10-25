@@ -62,10 +62,13 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 /* hero */
 .hero-bg{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
 .hero-foto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,15,12,.97) 0%,rgba(14,15,12,.88) 45%,rgba(14,15,12,.55) 100%)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,15,12,.96) 0%,rgba(14,15,12,.75) 50%,rgba(14,15,12,.15) 100%)}
+@media (min-width:701px){
+  .hero-foto{left:auto;width:52%;object-position:center 35%;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 40%);mask-image:linear-gradient(90deg,transparent 0%,#000 40%)}
+}
 .hero{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:56px;align-items:center;padding:96px 24px 120px;max-width:1200px;margin:0 auto}
 @media (max-width:700px){
-  .hero-bg::after{background:linear-gradient(180deg,rgba(14,15,12,.72) 0%,rgba(14,15,12,.82) 45%,rgba(14,15,12,.97) 100%)}
+  .hero-bg::after{background:linear-gradient(180deg,rgba(14,15,12,.45) 0%,rgba(14,15,12,.7) 45%,rgba(14,15,12,.96) 100%)}
   .hero{min-height:calc(100svh - 83px);align-items:flex-end;padding:48px 24px 56px}
 }
 .hero-text{flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:28px}
@@ -278,7 +281,7 @@ footer a{color:var(--soft)}
 <main id="top">
 
 <section class="hero-bg">
-  <img class="hero-foto" src="/img/fp-sala-pesi.webp" alt="" width="869" height="1200" fetchpriority="high">
+  <video class="hero-foto" id="hero-video" autoplay muted loop playsinline preload="auto" poster="/img/video-hero.webp" aria-hidden="true"><source src="/img/video-hero.mp4" type="video/mp4"></video>
 <div class="hero">
   <div class="hero-text">
     <span class="pill">Personal Trainer · Fondatore di FITPOINT ACTIVE</span>
@@ -771,6 +774,13 @@ fin.addEventListener('contextmenu', function(e){ if (e.target.closest('.pd-foto'
 document.querySelectorAll('[data-servizio]').forEach(function(a){
   a.addEventListener('click', function(){ document.getElementById('lead-form').servizio.value = a.getAttribute('data-servizio'); });
 });
+// Video di apertura: niente animazione per chi ha chiesto meno movimento o il risparmio dati (resta l'immagine ferma)
+(function(){
+  var v = document.getElementById('hero-video');
+  var poco = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var risparmio = navigator.connection && navigator.connection.saveData;
+  if (v && (poco || risparmio)) { v.removeAttribute('autoplay'); v.pause(); v.preload = 'none'; }
+})();
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
