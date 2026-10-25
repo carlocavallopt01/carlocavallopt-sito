@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Carlo Cavallo Personal Trainer | Sava e Coaching Online</title>
-<meta name="description" content="Personal trainer, preparatore atletico e fondatore di FITPOINT ACTIVE a Sava. Allenamento in studio, Coaching Online e analisi corporea BIA. Prima consulenza gratuita.">
+<meta name="description" content="Personal trainer, preparatore atletico e fondatore di FITPOINT ACTIVE a Sava. Allenamento in studio, Coaching Online e Video Coaching in diretta. Prima consulenza gratuita.">
 <meta property="og:title" content="Carlo Cavallo Personal Trainer">
 <meta property="og:description" content="Allenati con un metodo, non a caso. Personal training a Sava e Coaching Online. Prima consulenza gratuita.">
 <meta property="og:type" content="website">
@@ -107,6 +107,8 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .card p{margin:0;color:var(--soft);font-size:16px;line-height:1.6}
 .card a{margin-top:auto;font-weight:700;color:var(--accent);text-decoration:none}
 .card-ico{width:52px;height:52px;border-radius:14px;background:var(--line);display:flex;align-items:center;justify-content:center;color:var(--accent)}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.tag-pro{align-self:center;border:1px solid var(--accent)}
 .card.hot{background:var(--accent);color:var(--on-accent);border:0}
 .card.hot p{color:#22241D}
 .card.hot a{color:var(--on-accent);font-weight:800}
@@ -250,8 +252,8 @@ footer a{color:var(--soft)}
       <article class="card">
         <span class="card-ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg></span>
         <h3>Personal Training in studio</h3>
-        <p>Allenamento 1-to-1 al C CLUB di Sava: ogni ripetizione seguita, ogni carico scelto con te. Anche ginnastica posturale, functional, kettlebell ed EMS.</p>
-        <a href="#contatti">Scopri di più →</a>
+        <p>Allenamento 1-to-1 al C CLUB di Sava: ogni ripetizione seguita, ogni carico scelto con te. Anche ginnastica posturale, functional, kettlebell, EMS e analisi corporea BIA per misurare i progressi.</p>
+        <a href="#contatti" data-servizio="Personal Training in studio">Scopri di più →</a>
       </article>
       <article class="card hot">
         <span class="tag">Il più scelto</span>
@@ -260,10 +262,13 @@ footer a{color:var(--soft)}
         <a href="#coaching">Come funziona →</a>
       </article>
       <article class="card">
-        <span class="card-ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M6 16V10M11 16V5M16 16v-8M21 16v-3"/></svg></span>
-        <h3>Analisi corporea BIA</h3>
-        <p>Massa magra e grassa, acqua corporea, metabolismo basale e massa muscolare degli arti. Fissiamo insieme il tuo peso obiettivo e misuriamo i progressi.</p>
-        <a href="#contatti">Prenota il check →</a>
+        <div class="card-top">
+          <span class="card-ico"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg></span>
+          <span class="tag tag-pro">Servizio Pro</span>
+        </div>
+        <h3>Video Coaching</h3>
+        <p>Allenamenti di circa un'ora in videochiamata: io sono al telefono con te e seguo il tuo allenamento passo passo, correggendo ogni esercizio in diretta. Come avermi accanto, ovunque tu sia.</p>
+        <a href="#contatti" data-servizio="Video Coaching">Prenota una sessione →</a>
       </article>
     </div>
   </div>
@@ -409,7 +414,7 @@ footer a{color:var(--soft)}
         </label>
         <label>Mi interessa
           <select name="servizio">
-            <option>Coaching Online</option><option>Personal Training in studio</option><option>Analisi corporea BIA</option>
+            <option>Coaching Online</option><option>Personal Training in studio</option><option>Video Coaching</option>
           </select>
         </label>
         <button type="submit">Richiedi la consulenza</button>
@@ -489,6 +494,9 @@ fin.querySelector('.chiudi').addEventListener('click', function(){ fin.close(); 
 fin.addEventListener('click', function(e){ if (e.target === fin) fin.close(); });
 document.getElementById('ris-cta').addEventListener('click', function(){ fin.close(); });
 fin.addEventListener('contextmenu', function(e){ if (e.target.closest('.pd-foto')) e.preventDefault(); });
+document.querySelectorAll('[data-servizio]').forEach(function(a){
+  a.addEventListener('click', function(){ document.getElementById('lead-form').servizio.value = a.getAttribute('data-servizio'); });
+});
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>

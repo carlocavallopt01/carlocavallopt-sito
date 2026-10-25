@@ -33,6 +33,9 @@ va online da solo in pochi secondi.
   del repo `sito-fitpointactive`. Non visibili nella pagina: si aprono in una finestra (`<dialog>`) dal pulsante
   "Vedi i risultati" e si caricano solo all'apertura. `vercel.json` le esclude da Google (X-Robots-Tag).
   Non ci sono recensioni scritte: aggiungerle solo se Carlo le fornisce, mai inventarle.
+- Servizi (3 schede): Personal Training in studio (C CLUB, include EMS e analisi BIA), Coaching Online (app),
+  Video Coaching "Servizio Pro" (circa 1 ora in videochiamata, Carlo segue l'allenamento in diretta).
+  I link "Scopri di più"/"Prenota" preselezionano il servizio nel modulo (`data-servizio`).
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
