@@ -55,8 +55,9 @@ va online da solo in pochi secondi.
 - App Lead: al passaggio dal passo 1 al passo 2 il contatto va in Lead (Supabase `lead_dal_sito`, chiave anon pubblica, come
   il sito FitPoint): sede `fitpoint`, campagna "Sito · Carlo Cavallo Coach · Check gratuito · <servizio>", una volta per visita.
   Le risposte del questionario (salute ecc.) NON vanno in Lead: solo nel messaggio WhatsApp. Casella consenso obbligatoria,
-  campo trappola anti-spam `sito_web`. Repo app: `carlocavallopt01/lead`. ATTENZIONE: in Lead questi contatti contano come
-  "Moduli del sito" per le chiamate di Vittoria, ma il consenso di questo sito NON cita l'assistente virtuale.
+  campo trappola anti-spam `sito_web`. Repo app: `carlocavallopt01/lead`. Vittoria può chiamare questi contatti (deciso da
+  Carlo): il consenso dice "anche al telefono tramite un'assistente virtuale" e la privacy ha la sezione Vittoria. Le istruzioni
+  di Vittoria per questi contatti (check con Carlo) sono in `api/richiama.js` del repo `sito-fitpointactive` (`daSitoCarlo`).
 - Privacy: `privacy.html` (servita come /privacy grazie a `cleanUrls` in `vercel.json`). Titolare indicato: FIT POINT ACTIVE
   SSD a r.l. (P.IVA 03417200734), anche nel footer: confermato da Carlo, tutto è sotto la società.
 - Domande frequenti (`#faq`, prima dei contatti, + dati FAQPage per Google): palestra non serve per il Coaching Online,
