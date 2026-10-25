@@ -27,6 +27,8 @@ va online da solo in pochi secondi.
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
 - Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 è ritagliata in basso
   per togliere il nome scritto nella foto originale: ha la didascalia come le altre.
+- Sotto le foto VIP "In allenamento con me": `img/video-sperti.mp4` e `img/video-colombari.mp4` (dai TikTok di Carlo, ritagliati
+  in basso per togliere i nomi Instagram), muti, in loop, partono solo quando sono sullo schermo.
 - "I miei centri": titolo "Tre centri a Sava, un solo obiettivo: tu.", testo "non sto dietro a un PC a mandare
   schede copia e incolla, ci metto la faccia" e 3 ruoli (Imprenditore dal 2007, Coach, Personal trainer). Poi le schede:
   FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
