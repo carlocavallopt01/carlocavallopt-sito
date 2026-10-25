@@ -64,7 +64,18 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .ctas{display:flex;flex-wrap:wrap;gap:14px}
 .hero-media{flex:1 1 380px;min-width:0;position:relative}
 .photo{aspect-ratio:4/5;border-radius:28px;background:var(--surface-2);border:1px dashed #4A4D42;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted);font-size:15px;text-align:center;padding:24px;overflow:hidden}
-.photo img{width:100%;height:100%;object-fit:cover}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.photo.has-img{padding:0;border:0}
+
+/* vip */
+.vip-row{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;max-width:1200px;margin:0 auto;padding:0 24px}
+.vip{margin:0;position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;background:var(--surface-2)}
+.vip img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.vip figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 16px;background:linear-gradient(transparent,rgba(14,15,12,.92));font-family:'Archivo',sans-serif;font-weight:800;font-size:17px}
+@media (max-width:900px){
+  .vip-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:8px}
+  .vip{flex:0 0 62%;scroll-snap-align:start}
+}
 .badge{position:absolute;left:-20px;bottom:32px;background:var(--text);color:var(--bg);border-radius:18px;padding:16px 20px;display:flex;align-items:center;gap:14px;box-shadow:0 20px 40px rgba(0,0,0,.35)}
 .badge-ico{width:44px;height:44px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;flex:none}
 .badge strong{font-family:'Archivo',sans-serif;font-size:20px;display:block}
@@ -176,10 +187,8 @@ footer a{color:var(--soft)}
     </div>
   </div>
   <div class="hero-media">
-    <div class="photo">
-      <!-- FOTO HERO: sostituire con <img src="/img/carlo-hero.jpg" alt="Carlo Cavallo in palestra"> -->
-      <svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/><path d="M8 5l1.5-2h5L16 5"/></svg>
-      Foto in arrivo
+    <div class="photo has-img">
+      <img src="/img/vip-3.webp" alt="Carlo Cavallo in palestra con Billy Costacurta" width="700" height="817" fetchpriority="high">
     </div>
     <div class="badge">
       <span class="badge-ico"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E0F0C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span>
@@ -194,6 +203,22 @@ footer a{color:var(--soft)}
     <div class="stat"><b>8</b><span>master di specializzazione</span></div>
     <div class="stat"><b>2</b><span>titoli nel bodybuilding (2011)</span></div>
     <div class="stat"><b>3</b><span>centri: FITPOINT ACTIVE, C CLUB, GIRL POWER</span></div>
+  </div>
+</section>
+
+<section id="vip" class="block" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Si sono allenati con me</span>
+      <h2 class="display">Anche i VIP scelgono il metodo</h2>
+    </div>
+  </div>
+  <div class="vip-row">
+    <figure class="vip"><img src="/img/vip-1.webp" alt="Carlo Cavallo con Francesca Tocca" width="700" height="700" loading="lazy"><figcaption>Francesca Tocca</figcaption></figure>
+    <figure class="vip"><img src="/img/vip-2.webp" alt="Carlo Cavallo con Martina Colombari" width="700" height="787" loading="lazy"><figcaption>Martina Colombari</figcaption></figure>
+    <figure class="vip"><img src="/img/vip-3.webp" alt="Carlo Cavallo con Billy Costacurta" width="700" height="817" loading="lazy"><figcaption>Billy Costacurta</figcaption></figure>
+    <figure class="vip"><img src="/img/vip-4.webp" alt="Carlo Cavallo con Andrea Iannone" width="700" height="1012" loading="lazy"><figcaption>Andrea Iannone</figcaption></figure>
+    <figure class="vip"><img src="/img/vip-5.webp" alt="Carlo Cavallo con Gianni Sperti" width="700" height="789" loading="lazy"><figcaption>Gianni Sperti</figcaption></figure>
   </div>
 </section>
 
@@ -269,9 +294,8 @@ footer a{color:var(--soft)}
 
 <section id="chi-sono" class="block" style="padding-top:0">
   <div class="wrap about">
-    <div class="photo">
-      <!-- FOTO CHI SONO: sostituire con <img src="/img/carlo-cliente.jpg" alt="Carlo Cavallo mentre allena un cliente"> -->
-      Foto in arrivo
+    <div class="photo has-img">
+      <img src="/img/vip-2.webp" alt="Carlo Cavallo con Martina Colombari" width="700" height="787" loading="lazy">
     </div>
     <div class="about-text">
       <span class="eyebrow">Chi sono</span>
