@@ -115,6 +115,9 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .block{padding:104px 0}
 .head{display:flex;flex-direction:column;gap:14px;max-width:720px;margin-bottom:48px}
 .head h2,.h2{font-size:clamp(34px,4.5vw,56px)}
+.head h2 em{font-style:normal;color:var(--accent)}
+#vip .head{max-width:1000px}
+@media (min-width:700px){.nowrap{white-space:nowrap}}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:18px}
 .card h3{margin:0;font-family:'Archivo',sans-serif;font-weight:800;font-size:26px}
@@ -248,7 +251,7 @@ footer a{color:var(--soft)}
   <div class="wrap">
     <div class="head">
       <span class="eyebrow">Si sono allenati con me</span>
-      <h2 class="display">Anche i VIP scelgono il metodo</h2>
+      <h2 class="display">Oltre a centinaia di persone, <span class="nowrap">ho allenato <em>anche loro</em></span></h2>
       <p class="vip-nomi">Francesca Tocca · Martina Colombari · Billy Costacurta · Andrea Iannone · Gianni Sperti</p>
     </div>
     <div class="vip-row">
