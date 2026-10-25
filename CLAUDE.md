@@ -19,7 +19,7 @@ va online da solo in pochi secondi.
 - Sezioni: hero, numeri, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
   risultati, chi sono (certificazioni e master), modulo contatti, footer.
 - WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). Il modulo apre
-  WhatsApp con nome, telefono, obiettivo e servizio già scritti.
+  WhatsApp con nome, telefono, obiettivo, dove (in sede o Google Meet) e servizio già scritti.
 - Foto VIP (`img/vip-1..5.webp`) prese dal repo `sito-fitpointactive`:
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
 - Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 non ha didascalia:
@@ -38,6 +38,8 @@ va online da solo in pochi secondi.
   I link "Scopri di più"/"Prenota" preselezionano il servizio nel modulo (`data-servizio`).
 - Foto "Chi sono": `img/carlo-team.webp` (320 px, la foto di Carlo nella sezione Team del sito FitPoint).
   Se Carlo manda una versione più grande, sostituirla.
+- Sezione contatti = "Prenota il tuo check gratuito": in sede (C CLUB, Via Leonardo Da Vinci 95, con analisi BIA)
+  o in videochiamata su Google Meet, più cosa si fa nel check. Le CTA dicono "check gratuito", non "consulenza".
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI, app Speed Training Program.
 
