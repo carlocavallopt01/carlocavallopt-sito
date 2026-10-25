@@ -26,7 +26,9 @@ va online da solo in pochi secondi.
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
 - Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 è ritagliata in basso
   per togliere il nome scritto nella foto originale: ha la didascalia come le altre.
-- "I miei centri": FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
+- "I miei centri": titolo "Tre centri a Sava, un solo obiettivo: tu.", testo "non sto dietro a un PC a mandare
+  schede copia e incolla, ci metto la faccia" e 3 ruoli (Imprenditore dal 2007, Coach, Personal trainer). Poi le schede:
+  FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
 - Hero solo testo (niente foto: Carlo non la vuole lì perché la sua foto è già in "Chi sono").

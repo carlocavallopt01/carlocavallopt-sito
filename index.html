@@ -116,6 +116,11 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(14,15,12,.88);backdr
 .head{display:flex;flex-direction:column;gap:14px;max-width:720px;margin-bottom:48px}
 .head h2,.h2{font-size:clamp(34px,4.5vw,56px)}
 .head h2 em{font-style:normal;color:var(--accent)}
+.head-testo{margin:0;color:var(--soft);font-size:18px;line-height:1.65}
+.ruoli{list-style:none;margin:0 0 40px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.ruoli li{border-left:3px solid var(--accent);padding:4px 0 4px 18px;display:flex;flex-direction:column;gap:6px}
+.ruoli b{font-family:'Archivo',sans-serif;font-weight:900;font-size:22px;text-transform:uppercase}
+.ruoli span{color:var(--soft);font-size:16px;line-height:1.6}
 #vip .head{max-width:1000px}
 @media (min-width:700px){.nowrap{white-space:nowrap}}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
@@ -298,10 +303,16 @@ footer a{color:var(--soft)}
 
 <section id="centri" class="block" style="padding-top:0">
   <div class="wrap">
-    <div class="head">
+    <div class="head" style="max-width:860px">
       <span class="eyebrow">I miei centri</span>
-      <h2 class="display">Tre centri a Sava, un solo metodo</h2>
+      <h2 class="display">Tre centri a Sava, un solo obiettivo: <em>tu</em>.</h2>
+      <p class="head-testo">Non sono un coach che sta dietro a un PC a mandare schede copia e incolla. Il fitness lo vivo ogni giorno in sala, e ci metto la faccia: le persone che alleno le incontro, le guardo negli occhi e rispondo dei loro risultati. Per questo il tuo programma non è un modello uguale per tutti, ma il frutto di anni passati sul campo, con persone vere.</p>
     </div>
+    <ul class="ruoli">
+      <li><b>Imprenditore</b><span>Dal 2007 ho fondato FITPOINT ACTIVE, poi C CLUB e GIRL POWER, e i negozi Speed Training Store a Sava, Manduria e Francavilla Fontana.</span></li>
+      <li><b>Coach</b><span>14 certificazioni, 8 master e docente nelle formazioni ACSI: insegno il mestiere anche agli altri trainer.</span></li>
+      <li><b>Personal trainer</b><span>Ogni giorno in sala, accanto a chi si allena. Ho seguito centinaia di persone e anche volti noti della TV e dello sport.</span></li>
+    </ul>
     <div class="centri">
       <a class="centro" style="--c:#f5b400" href="https://www.fitpointactive.com/fitpoint-active" target="_blank" rel="noopener">
         <img src="/img/fp-sala-pesi.webp" alt="La sala pesi di FitPoint Active" width="869" height="1200" loading="lazy">
