@@ -40,6 +40,8 @@ va online da solo in pochi secondi.
 - Servizi (3 schede): Personal Training in studio (C CLUB, include EMS e analisi BIA), Coaching Online,
   Video Coaching "Servizio Pro" (circa 1 ora in videochiamata, Carlo segue l'allenamento in diretta).
   I link "Scopri di più"/"Prenota" preselezionano il servizio nel modulo (`data-servizio`).
+- Coaching Online (`#coaching`): "Ti seguo anche a distanza", per chi non può venire nei centri; 4 passi (check,
+  programma, video in chat, aggiustamento settimanale) + rimando al Video Coaching.
 - Foto "Chi sono": `img/carlo-chi-sono.webp` (verticale, sfondo bianco, mandata da Carlo), riquadro 4:5.
 - Sezione contatti = "Prenota il tuo check gratuito": in sede (C CLUB, Via Leonardo Da Vinci 95, con analisi BIA)
   o in videochiamata su Google Meet, più cosa si fa nel check. Le CTA dicono "check gratuito", non "consulenza".
