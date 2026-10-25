@@ -1,9 +1,13 @@
 {
+  "cleanUrls": true,
   "headers": [
     {
       "source": "/img/risultati/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, noimageindex" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noimageindex"
+        }
       ]
     }
   ]
