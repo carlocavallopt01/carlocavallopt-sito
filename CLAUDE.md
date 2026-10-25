@@ -21,7 +21,7 @@ va online da solo in pochi secondi.
 - Sezioni: hero, numeri, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
   risultati, chi sono (certificazioni e master), modulo contatti, footer.
 - WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). Il modulo apre
-  WhatsApp con nome, telefono, obiettivo, dove (in sede o Google Meet) e servizio già scritti.
+  WhatsApp con nome, telefono, email, obiettivo, dove (in sede o Google Meet) e servizio già scritti.
 - Foto VIP (`img/vip-1..5.webp`) prese dal repo `sito-fitpointactive`:
   1 Francesca Tocca, 2 Martina Colombari, 3 Billy Costacurta, 4 Andrea Iannone, 5 Gianni Sperti.
 - Foto VIP mostrate come su fitpointactive.com (griglia, nome grande in maiuscolo). vip-4 è ritagliata in basso

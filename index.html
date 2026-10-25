@@ -515,6 +515,7 @@ footer a{color:var(--soft)}
       <form id="lead-form" novalidate>
         <label>Nome e cognome<input name="nome" type="text" autocomplete="name" placeholder="Mario Rossi" required></label>
         <label>Telefono<input name="telefono" type="tel" autocomplete="tel" placeholder="333 123 4567" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" placeholder="mario.rossi@email.it" required></label>
         <label>Obiettivo
           <select name="obiettivo">
             <option>Tonificare</option><option>Dimagrire</option><option>Glutei</option><option>Cellulite</option><option>Massa muscolare</option><option>Altro</option>
@@ -592,14 +593,14 @@ if (WHATSAPP) {
 document.getElementById('lead-form').addEventListener('submit', function(e){
   e.preventDefault();
   var f = e.target;
-  if (!f.nome.value.trim() || !f.telefono.value.trim()) {
-    (f.nome.value.trim() ? f.telefono : f.nome).focus();
-    return;
-  }
+  var vuoto = [f.nome, f.telefono, f.email].filter(function(c){ return !c.value.trim(); })[0];
+  if (vuoto) { vuoto.focus(); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) { f.email.focus(); return; }
   var msg = 'Ciao Carlo, vorrei prenotare il check gratuito.\n' +
     'Dove: ' + f.dove.value + '\n' +
     'Nome: ' + f.nome.value.trim() + '\n' +
     'Telefono: ' + f.telefono.value.trim() + '\n' +
+    'Email: ' + f.email.value.trim() + '\n' +
     'Obiettivo: ' + f.obiettivo.value + '\n' +
     'Mi interessa: ' + f.servizio.value;
   if (WHATSAPP) {
