@@ -77,6 +77,9 @@ va online da solo in pochi secondi.
 - Footer in 3 gruppi: Seguimi (Instagram @carlocavallo.coach, Facebook, WhatsApp), I miei centri (fitpointactive.com,
   Instagram FitPoint/C Club/Girl Power, Facebook FitPoint), Speed Training Store (shop, Instagram). Niente YouTube
   (Carlo non ha un canale); @carlo.cavallo.pt è il vecchio Instagram, non usarlo.
+- Effetti sui pulsanti (blocco "effetti sui pulsanti" in fondo al CSS): verdi si alzano, alone verde e striscia di luce,
+  pressione che schiaccia, frecce che scivolano, bordati che si accendono, alone che pulsa sul WhatsApp fisso. Tutto spento con
+  prefers-reduced-motion.
 - Dati reali dal vecchio sito WordPress: 14 certificazioni, 8 master, Campione Italiano WABBA 2011
   (HP-3), Mr Universo IBFA 2011 (Juniores), docente formazioni ACSI.
 - L'app Speed Training Program non esiste più: non citarla sul sito.

@@ -259,6 +259,32 @@ footer .gruppo-titolo{font-size:12px;font-weight:800;letter-spacing:.12em;text-t
 footer a{color:var(--soft)}
 
 .wa{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:999px;background:#25D366;color:#0E0F0C;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px rgba(0,0,0,.4);z-index:30}
+/* effetti sui pulsanti */
+.btn,form button{transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease,background-color .25s ease,border-color .25s ease,color .25s ease}
+.btn-accent,form button[type="submit"]{position:relative;overflow:hidden;isolation:isolate}
+.btn-accent::after,form button[type="submit"]::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);z-index:-1;pointer-events:none;transition:left .6s ease}
+.btn-accent:hover,form button[type="submit"]:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(198,244,50,.35)}
+.btn-accent:hover::after,form button[type="submit"]:hover::after{left:130%}
+.btn:active,form button:active{transform:translateY(0) scale(.97);box-shadow:none}
+.btn svg{transition:transform .25s ease}
+.btn:hover svg{transform:translateX(4px)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);background:rgba(198,244,50,.06);transform:translateY(-3px)}
+.menu .btn:hover{box-shadow:0 8px 22px rgba(198,244,50,.3)}
+.card a,.centro .vai,.negozio a,.coaching-nota a{display:inline-block;transition:transform .25s ease,opacity .25s ease}
+.card a:hover,.negozio a:hover,.coaching-nota a:hover,.centro:hover .vai{transform:translateX(5px)}
+.btn:focus-visible,form button:focus-visible,.wa:focus-visible,.card a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wa{transition:transform .2s ease}
+.wa:hover{transform:scale(1.08)}
+.wa::before{content:"";position:absolute;inset:0;border-radius:inherit;background:#25D366;z-index:-1;animation:alone 3s ease-out infinite}
+@keyframes alone{0%{transform:scale(1);opacity:.55}70%,100%{transform:scale(1.7);opacity:0}}
+form .link-btn{overflow:visible}
+form .link-btn::after{display:none}
+form .link-btn:hover{transform:none;box-shadow:none;color:var(--accent)}
+@media (prefers-reduced-motion:reduce){
+  .btn,form button,.btn svg,.card a,.centro .vai,.negozio a,.wa{transition:none!important}
+  .btn:hover,.btn:hover svg,form button:hover,.wa:hover,.card a:hover,.negozio a:hover,.centro:hover .vai{transform:none!important}
+  .btn-accent::after,form button[type="submit"]::after,.wa::before{display:none}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Serve la palestra per il Coaching Online?", "acceptedAnswer": {"@type": "Answer", "text": "No. Puoi allenarti anche a casa: il programma lo preparo in base a dove ti alleni e all'attrezzatura che hai. Se invece vai in palestra, lo costruisco su quella."}}, {"@type": "Question", "name": "Quanto dura il check gratuito?", "acceptedAnswer": {"@type": "Answer", "text": "Circa 30 minuti. Puoi farlo in sede a Sava, al C CLUB, oppure in videochiamata su Google Meet, ovunque tu sia."}}, {"@type": "Question", "name": "Posso iniziare se non mi sono mai allenato?", "acceptedAnswer": {"@type": "Answer", "text": "Certo. Si parte dalle basi e dalla tecnica, con carichi adatti a te. Al check capisco il tuo punto di partenza e costruiamo il percorso da lì."}}, {"@type": "Question", "name": "Il check è davvero gratuito?", "acceptedAnswer": {"@type": "Answer", "text": "Sì, è gratuito e senza impegno. Serve a conoscerci, capire il tuo obiettivo e scegliere insieme il percorso più adatto."}}, {"@type": "Question", "name": "Che differenza c'è tra Coaching Online e Video Coaching?", "acceptedAnswer": {"@type": "Answer", "text": "Con il Coaching Online ti alleni quando vuoi con il programma che ti preparo: mi mandi i video e ti correggo in chat. Con il Video Coaching ci colleghiamo in videochiamata per circa un'ora e ti seguo in diretta, esercizio per esercizio."}}]}</script>
 </head>
