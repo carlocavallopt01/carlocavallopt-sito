@@ -18,7 +18,7 @@ va online da solo in pochi secondi.
 ## Contenuti
 - Design: sfondo scuro #0E0F0C, accento verde lime #C6F432 (variabili CSS in `:root`),
   font Archivo (titoli) + Manrope (testo). Responsive, menu a scomparsa sotto 1100px.
-- Sezioni: hero, numeri, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
+- Sezioni: hero, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
   risultati, chi sono (certificazioni e master), modulo contatti, footer.
 - WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). È il numero privato di Carlo: va bene sul sito
   per WhatsApp (confermato), ma Vittoria non lo dà mai e non promette che richiama lui. Il modulo apre
@@ -32,7 +32,8 @@ va online da solo in pochi secondi.
   FitPoint Active, C Club, Girl Power con link alle pagine di www.fitpointactive.com.
   Loghi e foto (`logo-*.webp`, `fp-sala-pesi`, `cclub-lat-machine`, `gp-sala-blu`) copiati dal repo
   `sito-fitpointactive`, che non va modificato da qui.
-- Hero solo testo (niente foto: Carlo non la vuole lì perché la sua foto è già in "Chi sono").
+- Hero: niente foto di Carlo (è già in "Chi sono"); sfondo `fp-sala-pesi.webp` scurito, a tutto schermo da telefono.
+  Tolta la fascia dei numeri (14 certificazioni ecc.): sono già più in basso. Da telefono VIP e negozi scorrono di lato.
   Quella foto (Carlo con i loghi) resta solo in `img/og-carlo.jpg` per l'anteprima social.
 - "Risultati": 13 coppie prima/dopo (`img/risultati/N-prima|dopo.webp`, senza volto) prese dalla sezione C Club
   del repo `sito-fitpointactive`. Non visibili nella pagina: si aprono in una finestra (`<dialog>`) dal pulsante
