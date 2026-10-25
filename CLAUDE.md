@@ -53,7 +53,8 @@ va online da solo in pochi secondi.
   per seguire i clienti; allena donne (tonificare), dimagrimento, massa, postura/dolori. Ha visto persone su cui nessuno
   avrebbe scommesso cambiare fisico e vita. Motto: "Never say… I can't do it"
   (Non dire mai… non ce la faccio), anche nel footer.
-- Foto "Chi sono": `img/carlo-chi-sono.webp` (verticale, sfondo bianco, mandata da Carlo), riquadro 4:5.
+- Foto "Chi sono": `img/carlo-tondo.webp` in un cerchio con bordo verde accanto al titolo, come nel Team del sito FitPoint
+  (ritagliata dalla foto verticale mandata da Carlo).
 - Sezione contatti = "Prenota il tuo check gratuito": in sede (C CLUB, Via Leonardo Da Vinci 95, con analisi BIA)
   o in videochiamata su Google Meet, più cosa si fa nel check. Le CTA dicono "check gratuito", non "consulenza".
 - Modulo in 2 passi: passo 1 dati obbligatori (nome, telefono, email) e scelte; poi passo 2 facoltativo "Aiutami a
