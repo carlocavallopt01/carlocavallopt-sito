@@ -78,6 +78,10 @@ va online da solo in pochi secondi.
 - Footer in 3 gruppi: Seguimi (Instagram @carlocavallocoach, Facebook, WhatsApp), I miei centri (fitpointactive.com,
   Instagram FitPoint/C Club/Girl Power, Facebook FitPoint), Speed Training Store (shop, Instagram). Niente YouTube
   (Carlo non ha un canale); @carlo.cavallo.pt e @carlocavallo.coach NON sono il suo Instagram: è @carlocavallocoach.
+- Google e statistiche: `robots.txt`, `sitemap.xml` (aggiornare `lastmod` e aggiungere le pagine nuove), dati strutturati
+  JSON-LD in `index.html` (Person "Carlo Cavallo" + ProfessionalService "Carlo Cavallo Coach" + FAQPage), `404.html`.
+  Vercel Web Analytics: script `/_vercel/insights/script.js` in index e privacy (anonimo, senza cookie, citato in /privacy);
+  va attivato da Carlo nel pannello Vercel > progetto carlocavallopt-sito > Analytics > Enable.
 - Effetti sui pulsanti (blocco "effetti sui pulsanti" in fondo al CSS): verdi si alzano, alone verde e striscia di luce,
   pressione che schiaccia, frecce che scivolano, bordati che si accendono, alone che pulsa sul WhatsApp fisso. Tutto spento con
   prefers-reduced-motion.
