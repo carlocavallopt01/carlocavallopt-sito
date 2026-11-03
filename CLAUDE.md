@@ -17,7 +17,7 @@ va online da solo in pochi secondi.
 
 ## Contenuti
 - Design: sfondo scuro #0E0F0C, accento verde lime #C6F432 (variabili CSS in `:root`),
-  font Archivo (titoli) + Manrope (testo). Responsive, menu a scomparsa sotto 1100px.
+  font Archivo (titoli) + Manrope (testo), ospitati sul sito in `fonts/` (`fonts.css`, niente Google Fonts per la privacy). Responsive, menu a scomparsa sotto 1100px.
 - Sezioni: hero, "Si sono allenati con me" (foto VIP), servizi, "I miei centri", Coaching Online,
   risultati, chi sono (certificazioni e master), modulo contatti, footer.
 - WhatsApp: numero 393775247736 (variabile `WHATSAPP` nello script in fondo). È il numero privato di Carlo: va bene sul sito
